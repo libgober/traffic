@@ -1,0 +1,513 @@
+\documentclass[11.0pt]{article}
+\usepackage{lscape} % Needed to get a table to be printed sideways 
+\usepackage{amssymb} %math symbols
+\usepackage{subfig}%for subfigures 
+\usepackage{longtable}
+\usepackage[font={small,it}]{caption}%smaller, italicized footnote font. 
+\usepackage{amsmath}%for bold math 
+\usepackage{python}
+\usepackage{verbatim}%for the \begin{comment} functionality 
+\usepackage[top=1.0in, bottom=1.0in, left=1.0in, right=1.0in]{geometry}
+%\usepackage{geometry}
+%\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+\usepackage{setspace}
+\setstretch{1}
+
+\usepackage{amsmath, amsthm}
+\usepackage{setspace}%allows for double spacing 
+\usepackage{atbegshi}%to eliminate first blank page 
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}%to eliminate first blank page  
+
+%%%MATHENVIRONS
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{quest}[thm]{Question}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{defns}[thm]{Definitions}
+\newtheorem{con}[thm]{Construction}
+\newtheorem{exmp}[thm]{Example}
+\newtheorem{exmps}[thm]{Examples}
+\newtheorem{notn}[thm]{Notation}
+\newtheorem{notns}[thm]{Notations}
+\newtheorem{addm}[thm]{Addendum} 
+\newtheorem{exer}[thm]{Exercise}
+\usepackage{authblk}% for correct display of affiliations 
+\newtheorem{counter}[thm]{Counter-Example}
+\usepackage{tikz}
+\tikzset{
+  my loop/.style={to path={
+    .. controls +(80:1) and +(100:1) .. (\tikztotarget) \tikztonodes}},
+  my state/.style={circle,draw}}
+\usepackage[sf]{titlesec}
+\newcommand{\pderiv}[2]{\frac{\partial #1}{\partial #2}}
+
+
+%%Title and Author
+\title{ Do Higher Housing Values Make Communities More Conservative? 
+\newline Evidence from the Introduction of E-ZPass}
+\author[1]{ \sf Connor Jerzak}
+
+\author[2]{ \sf Brian Libgober}
+
+\affil[1]{ \sf Department of Government and Institute for Quantitative Social Science, 
+\authorcr \sf Harvard University, 1737 Cambridge Street, Cambridge MA 02138
+\authorcr  \sf e-mail: cjerzak@g.harvard.edu} 
+
+\affil[2]{ \sf Department of Government and Institute for Quantitative Social Science, 
+\authorcr \sf Harvard University, 1737 Cambridge Street, Cambridge MA 02138
+\authorcr \sf e-mail: blibgober@g.harvard.edu}
+
+%\thanks{Preliminary. The authors thank Jeffry Frieden and Kenneth Shepsle for insightful comments. The authors names' are listed alphabetically, and the authors contributed equally to all aspects of the analysis. The usual disclaimers apply.}
+\date{\today} %\today}
+
+%%%Headers and Footers
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+
+\lhead{\sf{  Jerzak \& Libgober  }}
+\chead{}
+\rhead{\sf{Traffic, Property \& Political Attitudes} }
+\lfoot{}
+\cfoot{\arabic{page} }
+\rfoot{}
+
+\fancypagestyle{plain}{%
+  \renewcommand{\headrulewidth}{0pt}%
+  \fancyhead{}%
+  \fancyfoot[C]{\footnotesize \thepage\ }%
+}
+
+\begin{document}
+\thispagestyle{plain}
+
+\clearpage
+\setcounter{page}{1}
+
+%\bs
+{\sf 
+\maketitle
+}
+
+%\begin{comment}
+\begin{abstract}
+\noindent A rich corpus exists on the extent to which homeownership is central to American political attitudes. This paper contributes to the literature by using the introduction of E-ZPass in Pennsylvania and New Jersey to identify the effect of traffic-reducing transportation infrastructure on property values and, in turn, political behaviors. First, we develop a model showing that faster travel times results in individuals preferring a lower tax rate, as those who face the lower travel times are made effectively wealthier. Next, we present empirical evidence consistent with this theoretical result. We show that voting precincts near newly introduced E-ZPass toll plazas experienced a sharp increase in property values relative to similar precincts near non-E-ZPass exists, giving us leverage to identify the causal effect of property value changes on voting. After finding that the positive shock in property values is associated with a sizable increase in Republican vote share, we discuss the implications of this finding in light of the literature on homeownership and American politics. 
+\end{abstract} 
+%\end{comment}
+%\es
+
+\section{Introduction} 
+Homeownership is a central feature of the American political economy. According to the US Census Bureau, the average homeownership rate is about 65 percent. Although this figure is comparable with other advanced democracies such as France, Denmark, and the United Kingdom, what is distinctive about the American case is the importance of homeowners as a political constituency. Indeed, the US political system is remarkably decentralized compared to other rich democracies: key decisions about zoning, schooling, policing, public infrastructure, and more are made primarily at the city or county level. As Lacy and Soskice (2015) write, ``the decision voter in local elections is likely to be a home owner'' concerned with property values and related issues. Compared to renters, homeowners are much more likely to vote, are more likely to be conservative, and have distinct policy preferences (Gilderbloom and Markham, 1995; Kingston, Thompson, Eichar, 1984; Schwartz, 2008). Given both the prevalence of homeownership and the higher turnout rate of homeowners, this group constitutes a key political constituency in American politics. 
+
+In this paper, we examine a key aspect of home ownership---property values---and its political effect. There is an abundance of evidence documenting how homeowners act to maintain or increase their property values (see, among others, Lacy and Soskice, 2015; Brunner and Sonstelie, 2003). However, it is less understood how property values, in turn, influence political attitudes. This direction of causality has been difficult to establish due to the problem of unmeasured confounding. Individuals with high property values differ systematically from those with lower property values. These differences are often unobserved, undermining claims of causality. 
+
+In this paper, we attempt to address the problem of unmeasured confounding using an identification strategy that exploits the ways in which a range of characteristics about a place are embedded into local property values. For example, property values are influenced by the racial composition of new entrants to a neighborhood (Harris, 1999). In addition, scholars have found that crime, the quality of schools, the presence of homeowner associations, geographic proximity to wetlands, and public spending levels are all embedded into local property values (Oates, 1969; Doss and Taff, 1996; Meltzer and Cheung, 2014; Frischtak and Mandel, 2012). Because property values are determined by a range of characteristics about a place, we can identify exogenous variation in property values if we can find exogenous variation in one of the characteristics embedded into home price. This paper argues that exogenous variation in traffic patterns result in exogenous variation in housing prices, which we can then leverage to analyze the impact of increasing property values on the preferences of the median voter. 
+
+The relationship between property values and traffic congestion is well-studied. Foundational models in economic geographic show that property values are substantially determined by the amount of time it takes to get from a city's periphery to its center (for a review of this theory, see Fujita and Krugman, 2004). As a result, an intervention that decreases travel times for some areas should increase the property values of these (but not other) areas. To see why, consider how the areas with reduced travel time reduce the daily cost of commuting, making these areas more attractive to citizens. Traffic reductions also appear to make surrounding communities more qualitatively pleasant. Moreover, past empirics confirm that traffic reductions are embedded into local home prices. Kim, Park, and Kweon (2007) show that a $1\%$ decrease in traffic noise associated with a $1.3\%$ increase in land prices. Bagby (1980) also finds a robust relationship between traffic and property values, writing ``residential property values exhibit a surprisingly high elasticity with respect to reductions in traffic flow'' (p. 88). Bateman et al. (2001) review the literature on road traffic and residential property values, stating that the relationship between traffic congestion and local home prices is not only present in the US, but cross-nationally as well. These considerations imply that reductions in traffic congestion are coupled with a rise in the property values of nearby communities. 
+
+In the long-run, changes in the property values should result in geographic sorting. This sorting should alter the makeup of communities in terms of race, education, religiosity, party identification, or other features that are significantly associated with voting behavior. Because wealth adjustments spill over into the demographic realm, the effect of those wealth shocks on voting behaviors are difficult to identify statistically (for a discussion of the relationship between wealth and demographic change, see Doling and Elsinga, 2012; Smith 1979; Torrens and Nara, 2007). 
+
+However, a core insight of this paper is that we can temporarily overcome this identifiability hurdle. That is, if property values are sufficiently elastic to transportation cost shocks, then the property values will adjust \textit{before} the subsequent adjustment in the community's makeup. Thus, in the short run, the primary effect of the transportation intervention will be to change the value of people's houses without changing those individuals' identity characteristics in other meaningful ways. Put differently, if property values surge up faster than people move into or away from the community, an intervention with geographically differentiated effects on transportation costs enables a clean identification strategy. In short, if we can find a lag between shifts in the wealth equilibrium and adjustments in the demographic equilibrium, we can successfully identify the effect of the wealth equilibrium on voting returns.
+
+There are good reasons why a study like ours has not been previously attempted. The two most obvious policies that effect transportation costs---changes in speed limits and production of highways---do not allow for the type of clean inference we believe our study can offer. When a highway is built, it should decrease the costs of travel for those living relatively near the highway, but it also creates jobs, stimulates the economy in significant ways, and may raise opposition from local businesses hurt by commuters' ability to bypass the city center. If an effect is found, it can be hard to determine which of these many elements might be responsible. Likewise, speed limit are typically modified by state legislatures, so intra-state variation can be sparse. These factors reveal the difficulty of identification strategies that use variation in transportation costs. 
+
+This study uses the introduction of E-ZPass in Pennsylvania and New Jersey as the key intervention in our attempt to identify the effect of property value shocks on voting returns. E-ZPass was introduced in both states in 2002 on all their toll roads. According to estimates published by the department of transportation of New Jersey, the introduction of E-ZPass was associated with a 40\% decrease in traffic congestion near toll ways, resulting in an average decrease of about 10\% in the daily commute of those who used highways with E-ZPasses installed. We would expect that, over time, driving behaviors would change as more individuals elect to use the now speedier toll roads. This change would have the effect of reducing traffic on local streets. The introduction of E-ZPass is thus fairly unique in that it generates significant intra-state variation in transportation costs, but without creating the side-effects typically associated with government stimulus programs. 
+
+In this study, we first provide a simple model connecting property ownership and voting patterns. We show that, all else held constant, an exogenous increase in property values should be correlated with a rise in conservative voting behaviors, as citizens attempt to reduce their tax burden. The magnitude of this effect should depend on each individuals pre-shock wealth level. In the US context, this theoretical result would imply that increases in property values should generate support for the more Republican Party, which often takes a low-tax stance.
+
+Next, we use the introduction of E-ZPass in Pennsylvania and New Jersey in our identification strategy for assessing the effect of traffic-reducing transportation infrastructure on property values and, in turn, on political attitudes. The environment provides a natural setting for causal inference: first, E-ZPass reduced traffic for some---but not all---commuters in these two states; second, proximity to E-ZPass locations can be estimated with great accuracy (as can property values). Moreover, the sites that receives E-ZPasses were not selected in an endogenous fashion (at least in the period of interest) because E-ZPass plazas replaced existing toll structures. We then isolate causal effects using a conditional difference-in-difference estimator, using matching as well as bootstrapped standard errors. Instrumental variable (IV) estimates are also presented. Throughout the study, we primarily examine precinct-level election outcomes from 2000 and 2004. In both elections, property and taxation were at the center of political debate, providing an ideal setting for this analysis. We also provide a detailed portrait of the communities impacted by E-ZPass to confirm that E-ZPass was associated with no other significant socio-economic changes. We areal interpolate census block-group data to provide state-of-the-art estimates of the change in racial and economic makeup of communities near and far from the infrastructure improvement. We find that the introduction of E-ZPass did not significantly impact the socio-economic attributes of citizens. E-ZPass is primarily associated with a steep rise in property values, and also with an increase in conservative voting behaviors. These empirical results are consistent with our simple model into the relationship between property ownership and voting behaviors. 
+
+In what follows, the second section presents a model of how citizens might react to exogenous changes in property values. The third section provides further details regarding the conditional difference-in-difference estimation. The fourth highlights the key findings, and the fifth concludes. 
+
+\input{Literature_Review.tex}
+
+\section{Theoretical Motivation}
+This section presents a simple model of how exogenous shocks in property values will influence voting behaviors. Although this material is more technical, the intuition for this result is simple: all else equal, citizens should become more supportive of political leaders advocating low tax policies if they receive a boost in their wealth or property values. 
+
+We herein illustrate the relationship between commuting distance, property value, and voting behavior by developing a simple model based on Alonso's model of commuting behavior and the Meltzer-Richard model of voting behavior. In brief, our model proposes that individuals may purchase two commodities: a bundle of consumer goods and a housing unit some distance from the city center. They derive utility from these two goods and also from leisure. Individuals earn income by working at the city center and also receive lump-sump transfers from the government. Individuals are differentiated from each other purely based on their productivity, which we model following Persson and Tabellini (2000) as each individual having a unique amount of time. The income individuals have available to purchase consumer goods is limited, however, by the cost of purchasing a housing unit and also by the cost of commuting to work. Moreover, individuals have only a limited amount of time in the day, which they must fill with work, leisure, and commuting. 
+
+We solve the model in two stages. First, taking the amount of taxes and welfare-subsidies as fixed, individuals choose a place to live, an amount to work, and thereby necessarily determine an amount of income they will spend on consumer goods and an amount of time they will spend at leisure. Then, treating their amount of time spent working and the location of their home as constants, individuals choose a preferred tax rate.\footnote{We could have chosen to make citizens more foresighted and anticipate how they themselves will behave given their ideal tax rate, however doing so did not seem to lead to more interesting results} Since we assume the government's budget must be balanced, it follows that choosing the amount of taxes necessarily determines the amount of welfare as well.
+
+More formally, we for simplicity assume that individuals have the following quasi-linear utility function
+$$ U(c,l) = c + h(l) $$
+\noindent where $c$ indicates the amount of consumer good purchased, $l$ indicates the amount of time spent at leisure, and $h$ is a concave function with analytically ``nice'' properties. We assume that individuals all receive the same direct utility from having a house regardless of its distance from the city center and homelessness is not an option, therefore house choice only enters the utility function as a constant which may be dropped without loss of generality. It would be wrong to think that how far one's house is from downtown ($d$) is irrelevant, however, since it indirectly affects individuals utility through the budget and time constraints.
+
+Of the two constraints, the time constraint is the more straightforward. Each individual is endowed with a certain amount of time $\alpha$, with the average individual getting $\bar{\alpha}$. Formally, $\alpha$ comes from a well-behaved distributed $F$. As individuals spend all their time working, at leisure, or commuting, the time constraint is given as
+$$ \alpha = l + n + bd$$
+Meanwhile, the budget constraint is given by
+$$(1-\tau)n + w = ad + R(d) + c$$
+The left hand side of this equation gives the amount of disposable income and the right hand side gives the costs. The tax rate is given by $\tau$ and the amount of welfare per individual is $w$. Commuting costs a fixed amount per distance, $a$, and the cost of a mortgage/rent is given by $R(d)$. We treat all other consumer goods as the numeraire and therefore the cost of purchasing $c$ units of these goods is $c$. 
+
+In the first part of our solution concept, individuals maximize utility treating its choice variables as $c,l,n,d$. We formally require that all these quantities be non-negative, although for the analysis presented here we shall assume an interior solution. Substituting the constraints into the utility function gives the following unconstrained maximization problem
+
+$$\max_{n,d}(1-\tau)n+w-ad - R(d) + h(\alpha-n-bd)$$
+
+Which leads to the following first order conditions
+
+\begin{eqnarray}
+h'(\alpha-n-bd) &=& (1-\tau)\\
+h'(\alpha-n-bd) &=& \frac{-a-R'(d)}{b} 
+\end{eqnarray}
+
+In equilibrium individuals choose levels of labor and home distance $n^*,d^*$ that together constitute a local extrema for this function. Concavity of $h$ implies that this extrema is indeed a local maximum. Since equilibrium is defined by the simultaneous solution to these equations, we may combine the two equations and get the following expression.
+
+$$b(1-\tau) + a = -R'(d^*)$$
+
+This equation leads to our first important inference.  Since all the terms on the left-hand side are positive, we must have that $R'(d)$ is negative, so that the cost of properties decreases as one goes further from the city.  This is as one should expect since being closer to the city gives individuals more time and allows them to spend less commuting.  If we assume that $R$ is invertible we get a closed-form expression for the ideal house location. Residually, we determine the value of all the choice variables as follows either through the first order conditions or the constraint equations.
+
+\begin{eqnarray}
+d^* &=& R'^{-1}(-a - b(1-\tau))\\
+n^* &=& \alpha-h'^{-1}(1-\tau)-bd^* \\
+l^* &=& h'^{-1}((1-\tau)) \\
+c^* &=& (1-\tau) n^* + w - ad^* - R(d^*)
+\end{eqnarray}
+
+With closed form solutions for the individual's choice variables, we can begin to understand their voting preferences. Note, however, that we assume individuals cannot in the short run change where they live when solving the tax rate problem. One subtle, but crucial consequence of this is that the utility maximization problem changes and therefore we must solve again the problem of optimal labor.
+$$\max_n (1-\tau)n + w - ad - R + h(\alpha - n - bd)$$
+This gives the first order condition 
+$$ 0 = (1-\tau) - h'(\alpha - n -bd)$$
+And the voter assumes given tax rate $\tau$, he or she will provide $n^* = \alpha -bd - h'^{-1}(1-\tau)$. Note that to get the indirect utility of a given tax policy we need to understand how much government revenue there is to be redistributed as welfare. This amount is $\tau \bar{n}$, where $\bar{n}$ equals average labor.  If we let $N(\tau) = \bar{\alpha} + b\bar{d} - h^{-1}(1-\tau)$ then we can rewrite $n^*$ as 
+$$ n^* = N(\tau) + \alpha - \bar{\alpha} - b(d+\bar{d})$$
+
+If we assumed a finite population then it  follows that $\bar{n^*} = N(\tau)$. In the literature we typically assume that there is a continuum of voters with unit mass, and we will follow this assumption as well, however the result is the same. Thus, $\bar{n}(\tau) = N(\tau) =  \bar{\alpha} +  b\bar{d}- h'^{-1}(1-\tau) $. Since transfers are residually determined by the tax rate and the amount of labor, we can state the utility maximization problem that defines voter preferences.
+
+\begin{eqnarray}
+\max_{\tau} (1-\tau)n(\tau) + \tau N(\tau) - ad - R(d) + h(\alpha - n(\tau) - bd) 
+\end{eqnarray}
+Rewriting $n(\tau)$ in terms of $N(\tau)$ on the left, we obtain
+
+$$ \max_{\tau} (1-\tau)(N(\tau) + \alpha - \bar{\alpha} - b(d+\bar{d})) + \tau N(\tau) - ad - R(d) +  h(\alpha -[N(\tau) + \alpha - \bar{\alpha} - b(d+\bar{d})] - bd)$$
+
+$$ \max_{\tau} N(\tau) + (1-\tau)(\alpha-\bar{\alpha}-bd-b\bar{d})  - ad - R(d) +  h(\bar{\alpha}-N(\tau)-b\bar{d})$$
+Thus,  the ideal policy satisfies
+
+$$N_\tau(\tau) - (\alpha - \bar{\alpha}-bd-b\bar{d}) - N_\tau(\tau)h'(\bar{\alpha}-N(\tau)-b\bar{d}) = 0$$.
+
+\begin{eqnarray}
+N_\tau(\tau)[1- h'(\bar{\alpha}-N(\tau)-b\bar{d})]- (\alpha - \bar{\alpha}-bd-b\bar{d})  = 0
+\end{eqnarray}
+
+Now we apply the envelope theorem to note that at the maximum of the indirect utility function the choice of $n$ is also optimized.  Solving for optimal $n$ in $(7)$ we arrive at 
+
+$$ (1-\tau)   - h'(\alpha - n(\tau) - bd) = 0 \implies \tau = 1- h'(\alpha - n(\tau) - bd)$$
+But then note that at the optimum $\alpha - n(\tau) - bd = \bar{\alpha} - N(\tau) - b \bar{d}$ and so  $\tau = 1 - h'(\bar{\alpha} - N(\tau) - b \bar{d})$.  Thus we a can return to (8)
+
+\begin{eqnarray}
+N_\tau(\tau)\tau - (\alpha - \bar{\alpha}-bd-b\bar{d})  = 0 \\
+\tau = \frac{\alpha - \bar{\alpha}-bd-b\bar{d}}{N_\tau(\tau)}
+\end{eqnarray}
+Note that $N_\tau(\tau)$ is negative. Intuitively, this is the case because the average amount of labor supplied should go down when taxes go up, but we can show it formally as well. By definition of $N(\tau)$ and using the inverse function theorem we get:
+
+$$N_\tau(\tau) = -(1/h'(h^{-1}(1-\tau))$$
+But $h$ is concave increasing, so the denominator is positive  and we get the expected effect.  Thus, returning to $(10)$, we can see that the effect of an increase in the speed of travel $b$ on the ideal tax rate is.
+
+$$\pderiv{\tau}{b} = \frac{d+\bar{d}}{N_\tau(\tau)}$$
+Which is negative by the negativity of $N_\tau(\tau)$.  Thus, faster travel times results in individuals preferring a lower tax rate, as those who face the lower travel times are made effectively wealthier. 
+
+%Here it is worth while to think about the bounds of integration.  The maximum value of $x$ is 1, but for small values of $x$ it is possible that $n=0$.  We can characterize this point using the ideal points we found previously and exploiting the fact that $d$ is now fixed. 
+%
+%\begin{eqnarray}
+%0  =n^*(\tau) &=& 1 - h'^{-1}((1-\tau)s_0) - bd \\
+%(1-\tau)s &=& h'(1-bd) \\ 
+%x_0 &=& \frac{h'(1-bd)}{k(1-\tau)}\\
+%\end{eqnarray}
+%
+%Thus we can simplify $w$ as 
+%
+%$$ \tau k  \int_{x_0}^1 x \left(1 - h'^{-1}((1-\tau)kx) -  bd \right)  \hspace{2mm} dx $$
+
+\section{Empirical Methods}
+The prior section sketched a model that formalizes the self-interested voter hypothesis as it relates to changes in housing prices. We found that reductions in travel time should, all else equal, make communities more conservative. Next, our approach to addressing this relationship exploits the fact that the introduction of E-ZPass in Pennsylvania and New Jersey resulted in decreases in traffic in some (but not all) parts of the states. In addition, E-ZPass plazas were not selected endogenously at the time of introduction, but replaced already existing toll structures.\footnote{We later perform a series of robustness checks to ensure that the initial (endogenous) placement of the tolls does not confound our inferences.} We thus propose a conditional difference-in-difference methodology to evaluate the change in political attitudes between precincts that were exposed to E-ZPass (and that thus experienced a sharp rise in property values) and those that were not (Donald and Lang 2007).\footnote{We might wonder if our approach should incorporate information about precincts' distance to E-ZPass and non-E-ZPass exits (e.g. via local linear regression). However, this approach would potentially be incompatible with our main question of interest. That is, with local linear regression methods, we would implicitly be comparing the continuous effect of proximity to E-ZPass exits with the continuous effect of proximity to non-E-ZPass exits. Nevertheless, our main question of interest implies a binary comparison: how are precincts near E-ZPass and similar non-E-ZPass precincts changing over time? }  Formally, our unit of treatment is voting precincts. Voting precincts are geographically compact entities that provide a good spatial approximation for the location of the voters who live in them. 
+
+To examine the robustness of our effect across state-lines, we examine two populous, fairly similar states that received E-ZPass at about the same time: New Jersey and Pennsylvania. Both states received E-ZPass at a select number of traffic arteries from late 2001 through 2002. We derive our measure of property values using areal interpolated Census data from 2000 and 2009. The US Census Bureau's estimates contain precise information about the percentage of owner-occupied housing units within certain value thresholds.\footnote{The thresholds are ``Less than \$20,000,'' ``\$20,000 to \$49,999,'' ``\$50,000 to \$99,999,'' ``\$100,000 to \$149,999,'' ``\$150,000 to \$299,999,'' ``\$300,000 to \$499,999,'' ``\$500,000 to \$749,999,'' ``\$750,000 to \$999,999'' and ``\$1,000,000 or more.''} Our proxy for political attitudes is Democratic vote share in Presidential elections, where our period before is 2000 and our period after is 2004. Unfortunately, precinct-level election data is not available from before 2000 in either state, so we are not able to directly evaluate the common trend assumption. However, by matching on demographic predictors that are strong predictors of Democratic vote share in Presidential election, we are able to partially address these concerns. We are able to match on percent black, percent female, percent urban, percent above \$125,000 (in 2000 dollars), and a series of other characteristics. We selected these matching variables because they are widely considered to serve as important predictors of Democratic vote share. Matching was done without replacement using Mahalanobis distance metric.\footnote{Estimates with replacement yield estimates with the same sign and significance.} County-level fixed effects were also used in the difference-in-difference estimation to control for spatial autocorrelation. %are these the right matching variables? 
+
+This analysis also addresses two questions around internal validity. First, we must define who actually received a ``treatment.'' That is, in order for citizens living in a precinct to have received a consistent reduction in traffic, the precinct must be ``close'' to an E-ZPass. Whether ``close'' should mean 5, 10, or 15 miles is unclear \emph{a priori}, and we provide estimates under a plausible range of values. For the distance calculations, we use a network distance optimized distance measure (i.e. the minimum distance one would have to drive from the precinct center to the nearest E-ZPass plaza). 
+
+Second, we must define a reasonable control group that could have received a reduction in traffic via E-ZPass but did not. To construct this control group, we examine precincts close to exits on major highways without E-ZPass tolls. However, some precincts are both within 10 miles of an E-ZPass and 10 miles of an exit to a highway without E-ZPass. Thus, in order to get genuine separation of treatment and control groups, we create a rule excluding those precincts that are in one testing group but are on the cusp of being on the other. Clearly, the exclusion rule should have a radius at least as big as the inclusion rule to get true separation. But one should also be concerned that citizens may be willing to drive further to take a non-toll road than one with tolls (i.e. in citizens' everyday experience, perceived ``closeness'' to an E-ZPass exit may differ from perceived ``closeness'' to a non-E-Z-Pass exit). As a result, the radius of the exclusion rule should, according to this line of reasoning, be larger than the radius of the inclusion rule. At the same time, if it is too large, one will then exclude too many units, particularly those in suburban areas where many different highways intersect. While, in principle, treatment and control groups could each have their own inclusion and exclusion rules, we shall assume that treatment and control each have the same rule for inclusion and the same rule for exclusion. This approach has the benefit of consistency. Moreover, rather than presenting a single, arbitrarily chosen difference-and-difference estimate, we provide estimates for our main effect under a plausible grid of inclusion and exclusion values. Although doing this potentially raises multiple testing issues, we expect our results should be highly correlated. In a way, one can view this grid as a robustness check on a single statistical hypothesis test.
+
+\section{Empirical Results}
+First, we must first confirm that E-ZPasses are associated with an increase in housing prices, but not associated with significant changes in socio-economic variables correlated with voting behaviors. In order to reduce the dimensionality of our difference-and-difference procedure, we temporarily ``fix'' our definition of treatment and control to what we would have initially viewed as reasonable.\footnote{These results are consistent for a range of ``inclusion'' and ``exclusion'' values; we fix these values for simplicity of the exposition.} Here, a precinct is in the treatment (or control) group so long as it is within 12 miles of an E-ZPass toll plaza (or the exit ramp of a non-E-ZPass highway), but more than 18 miles from the exit ramp of a non-E-ZPass highway (or an E-ZPass toll plaza). At these values, the estimated effects are not their maximum, but we are fairly confident that the values separate precincts into those where individuals regularly use E-ZPass roads and those where individuals do not. In the difference-in-difference, we compared the 2000 Census data with the 2009 Census data, which is an average of the period from 2006 to 2009. County-level fixed effects were used. 
+
+As expected, the E-ZPass introduction appeared to have sizable effects on property values. The percentage of homes worth \$150,000-300,000 went up by about 10 more percentage points in the E-ZPass group compared to the control group. In addition, the average housing price increased by about \$50,000 more in the E-ZPass group compared to the control group. Thus, this setting is ideal for testing our theoretical hypotheses, given how we predicted that individuals with moderate or high wealth should experience stronger anti-tax pressure in response to property value shocks (since they already receive comparatively less in redistribution). Taken together, these results indicate that, compared to similar communities near non-E-ZPass exits, areas that received E-ZPasses experienced a relative increase in housing prices.\footnote{Currie and Walker (2011) used E-ZPasses to study the effect of air pollution on infant health, and reported finding no change in housing prices after the introduction of E-ZPasses. Our study differs in key ways. First, Currie and Walker compare housings that are within 2 km of an E-ZPass plaza to those that are within 2-10 km. However, we make a comparison instead between precincts within $k$ km of an E-ZPass plaza to precincts that are similar on observable characteristics and that are within $k$ km of an exit on a non-E-ZPass highway. The time horizon of interest for our study is also longer.} 
+
+We find that E-ZPass communities experienced relatively few other socio-economic changes. The next largest effect is found in public transportation use, where E-ZPass communties saw an 8 percentage point drop in public transportation use relative to the control group. E-ZPass communities became only slightly better educated (1 percentage point increase in percentage of individuals completing high school), and also wealthier (percentage of households with \$125,000 or above in income grew by a bit less than 1 percentage point). Overall, however, we find that by far the most significant changes in E-ZPass communities related to property values, which quickly increased. 
+
+Having seen that E-ZPasses are associated with a sharp rise in property values, we can proceed with our estimation of how voting returns subsequently changed. As noted, for each combination of exclusion and inclusion rules, our research design will produce a somewhat different effect, since changing these values changes the experiment by including different units. However, the results are robust to a large range of reasonable choices. In the Appendix (Figure \ref{colorgram_04}), we show 
+the magnitude of the effect in Pennsylvania and New Jersey comparing 2000 and 2004, where we assume ``inclusion'' and ``exclusion'' rules are allowed to vary, but treatment and control get the same rule.\footnote{As a result, our data can produce a three-dimensional surface, where the $x$-axis is distance to be included in treatment or control, $y$-axis is distance to be excluded from treatment or control, and $z$-axis is the magnitude of the effect. The analysis confirms that our results are not specific to arbitrarily chosen treatment/control thresholds. } The direction and magnitude of the effect is almost entirely consistent regardless of the rules one chooses: the treatment group voted on average 1-2 percentage points more Republican than the control group did. Thus, we have confidence that, irrespective of the inclusion/exclusion values, we will arrive at a similar result. Moreover, the main effects are significant using bootstrap and analytical standard errors (see Bertrand et al. for an extended discussion of uncertainty in difference-in-difference estimation).\footnote{There is no consensus about how to incorporate the matching procedure into the calculation of difference-in-difference standard errors (especially when Mahalanobis distance metric is used). Although they currently lack justification in statistical theory in the matching context, bootstrapped standard errors seem to perform well in some forms of difference-in-difference estimation (see Bertrand, 2004). The analytic standard errors were calculated using the linear regression form of difference-in-difference estimation (with county fixed effects). The bootstrapped standard errors were by generating selecting random subsets of the data \emph{prior} to matching.} We also present results from an instrumental variables analysis, which finds that a \$50,000 exogenous jump in housing prices is correlated with nearly a 1 percentage point decrease in the Democratic vote share between 2000 and 2004.\footnote{A separate IV analysis using Pennsylvania data only yields the same substantively conclusion.}
+
+After comparing the Democratic vote share in E-ZPass and non-E-ZPass precincts in 2000 and 2008, we performed this analysis comparing 2000 and 2008 vote share results. With this comparison, we find an increase to the substantive and statistical significance of our estimates. Using the baseline 12$/$18 rule, we estimate an effect of $-$2.4 percentage points, indicating that precincts near E-ZPasses became, on average, more conservative than if E-ZPasses had not been introduced. In the Appendix (Figure \ref{colorgram_08}), we graphically depict how this result is stable regardless of the selection criteria for treatment/control. The median estimate when comparing 2000 and 2008 is greater than when comparing 2000 and 2004, suggesting that the effect of the E-ZPass introduction is increasing over time (although this claim is provisional, given the possibility of increasing geographic sorting over time). In a similar vein, an instrumental variable analysis comparing 2000 and 2008 finds that a \$50,000 shock in housing prices is correlated with about a 2 percentage point decrease in the Democratic vote share. 
+
+Taken together, the quantitative evidence suggests that E-ZPass's two largest effects concern property values and voting patterns. As property values rise in reaction to the reduction in traffic congestion, we find that precincts also appear to become more conservative---a finding consistent with the theoretical model on the link between property and voting behaviors. 
+
+\begin{table}[!htbp] \centering 
+  \caption{Results of IV analysis, comparing 2000 and 2004.} 
+  \label{iv} 
+\scriptsize 
+\begin{tabular}{@{\extracolsep{5pt}}lcc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{2}{c}{\textit{Instrumental VariableAnalysis:}} \\ 
+\cline{2-3} 
+\\[-1.8ex] & $1^{\textrm{st}}$ Stage (Outcome: Ave. Home Price [\$100,000s])  & $2^{\textrm{nd}}$ Stage (Outcome: Dem. Share Gain, 2000-2008) \\ 
+\\[-1.8ex] & (1) & (2)\\ 
+\hline \\[-1.8ex] 
+E-ZPass Treatment & 0.659$^{*}$ &  \\ 
+  & (0.021) &  \\ 
+  & & \\ 
+Predicted Ave. Home Price (\$100,000s)&  & $-$0.016$^{*}$ \\ 
+  &  & (0.006) \\ 
+  & & \\
+County Fixed Effects & No &  Yes \\ 
+  & & \\ 
+Demographic Controls & No &  Yes \\ 
+  & & \\ 
+ Constant & Yes & Yes \\ 
+  & & \\ 
+\hline \\[-1.8ex] 
+Observations & 6,028 & 6,028 \\ 
+R$^{2}$ & 0.290 & 0.293 \\ 
+Adjusted R$^{2}$ & 0.289 & 0.284 \\ 
+Residual Std. Error & 0.754 (df = 6021) & 0.051 (df = 5956) \\ 
+F Statistic & 410.003$^{*}$ (df = 6; 6021) & 34.749$^{*}$ (df = 71; 5956) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{2}{r}{$^*$p$<0.05$} \\ 
+\end{tabular} 
+\end{table} 
+
+\begin{table}[!htbp] \centering 
+  \caption{Results of IV analysis, comparing 2000 and 2008.} 
+  \label{iv} 
+\scriptsize 
+\begin{tabular}{@{\extracolsep{5pt}}lcc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{2}{c}{\textit{Instrumental Variable Analysis}} \\ 
+\cline{2-3} 
+\\[-1.8ex] & $1^{\textrm{st}}$ Stage (Outcome: Ave. Home Price [\$100,000s])  & $2^{\textrm{nd}}$ Stage (Outcome: Dem. Share Gain, 2000-2008) \\ 
+\\[-1.8ex] & (1) & (2)\\ 
+\hline \\[-1.8ex] 
+E-ZPass Treatment & 0.659$^{*}$ &  \\ 
+  & (0.021) &  \\ 
+  & & \\ 
+Predicted Ave. Home Price (\$100,000s) &  & $-$0.034$^{*}$ \\ 
+  &  & (0.008) \\ 
+  & & \\ 
+County Fixed Effects & No &  Yes \\ 
+  & & \\ 
+Demographic Controls & No &  Yes \\ 
+  & & \\ 
+ Constant & Yes & Yes \\ 
+  & & \\ 
+\hline \\[-1.8ex] 
+Observations & 6,028 & 6,028 \\ 
+R$^{2}$ & 0.290 & 0.318 \\ 
+Adjusted R$^{2}$ & 0.289 & 0.310 \\ 
+Residual Std. Error & 0.754 (df = 6021) & 0.074 (df = 5956) \\ 
+F Statistic & 410.003$^{*}$ (df = 6; 6021) & 39.147$^{*}$ (df = 71; 5956) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{2}{r}{$^*$p$<0.05$} \\ 
+\end{tabular} 
+\end{table} 
+
+
+\begin{figure}[htb!]%
+    \centering
+    \subfloat[]{{\includegraphics[scale=0.70]{map1.png} }}%
+    \quad
+    \subfloat[]{{\includegraphics[scale=0.70]{map2.png} }}%
+    \quad
+    \subfloat[]{{\includegraphics[scale=0.70]{map3.png}   }}%
+   \caption{In all panels, Pennsylvania and New Jersey have been colorized by change in vote share for Democrats between 2004 and 2000 (redder means the Democrats lost more ground), and treated precincts are indicated in green and control are in brown (assuming 12/18 rule, see discussion).  The top panel shows both states, the middle panel shows the highest population density region, and the bottom panel shows the entire state again with lines connecting treated precincts to their match in control. }
+   \label{maps}
+\end{figure}
+\clearpage 
+\subsection{Robustness Checks}
+To assess the strength of these results, we perform robustness checks. First, although E-ZPass plazas were not placed endogenously at the time of introduction, one might wonder whether the endogenous \emph{initial} placement of tolls could confound the results. To address this concern, we perform the same analysis as above using data from Ohio. Ohio replaced its traditional tolls with E-ZPass plazas in 2009. Thus, we can compare the 2000 and 2004 election returns using the same methods as in the above, but using proximity to the traditional toll structures as equivalent to the treatment for this placebo analysis. If our results are confounded by time-varying factors specific to precincts near toll structures, we would expect to see significant difference-in-difference estimates. However, if the results are unconfounded, we would expect to find small and insignificant effect estimates. 
+
+The Ohio 2000/2004 placebo test is reassuring, as it gives no evidence that time-varying factors specific to E-ZPass precincts are confounding. After comparing 2000 and 2004 precinct-level returns in Ohio using conditional difference-in-differences with matching and fixed effects, we find that essentially none of the difference-in-difference estimates are significant in this placebo test. In other words, precincts near \emph{future} E-ZPass exits and non-E-ZPass exits exhibited a similar voting trend from 2000 and 2004, a result also found using an IV analysis (see Table \ref{iv_oh_placebo}). 
+
+In addition, we can also re-run the Ohio analysis between 2008 and 2012. Recall that E-ZPass plazas replaced Ohio's traditional toll structures in 2009. Thus, the Ohio case presents an ideal opportunity to replicate our analysis. After performing this replication, we find a similar effect as in New Jersey and Pennsylvania between 2000 and 2004. The magnitude and direction of the effect are the same (although the standard errors are slightly larger due to the fewer number of treated precincts in Ohio; many of the estimates are still significant). In the Appendix, Figure \ref{ohio} presents how the Ohio results are again not sensitive to the selection threshold. 
+
+On balance, the Ohio robustness checks strengthen the credibility of our findings in several ways. First, the placebo analysis shows that, in Ohio, future E-ZPass precincts and similar but non-eligible E-ZPass precincts showed a similar trend between 2000 and 2004. This finding implies that factors related to the initial selection of E-ZPass precincts are likely not confounding our results for New Jersey and Pennsylvania. This finding also suggests that our matching procedure has indeed created a common trend between treated and control units. Furthermore, we have replicated the full analysis for Ohio comparing Democratic vote share before and after parts of the state actually did receive E-ZPasses in 2009. In this replication, we found a treatment effect very similar to that in New Jersey and Pennsylvania. These findings further suggest that positive property value shocks appear to be making communities more conservative. 
+
+\begin{table}[!htbp] \centering 
+  \caption{Placebo analysis - IV analysis in Ohio comparing 2000 and 2004.} 
+  \label{iv_oh_placebo} 
+\scriptsize 
+\begin{tabular}{@{\extracolsep{5pt}}lcc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{2}{c}{\textit{Instrumental Variable Analysis:}} \\ 
+\cline{2-3} 
+\\[-1.8ex] & $1^{\textrm{st}}$ Stage (Outcome: Ave. Home Price [\$100,000s]) & $2^{\textrm{nd}}$ Stage (Outcome: Dem. Share Gain, 2000-2004) \\ 
+\\[-1.8ex] & (1) & (2)\\ 
+\hline \\[-1.8ex] 
+E-ZPass Placebo & $-$0.160$^{*}$ &  \\ 
+  & (0.026) &  \\ 
+  & & \\ 
+Predicted Ave. Home Price (\$100,000s) &  & 0.009 \\ 
+  &  & (0.052) \\ 
+  & & \\ 
+County Fixed Effects & No &  Yes \\ 
+  & & \\ 
+Demographic Controls & No &  Yes \\ 
+  & & \\ 
+ Constant & Yes & Yes \\ 
+  & & \\ 
+\hline \\[-1.8ex] 
+Observations & 6,149 & 6,149 \\ 
+R$^{2}$ & 0.006 & 0.098 \\ 
+Adjusted R$^{2}$ & 0.006 & 0.089 \\ 
+Residual Std. Error & 0.535 (df = 6147) & 0.056 (df = 6092) \\ 
+F Statistic & 37.710$^{*}$ (df = 1; 6147) & 11.757$^{*}$ (df = 56; 6092) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{2}{r}{$^*$p$<0.05$} \\ 
+\end{tabular} 
+\end{table}
+
+\clearpage 
+\section{Discussion \& Conclusion}
+This study does not exhaustively establish that randomly assigned changes in home prices make citizens more conservative or liberal. To show this, we would need experimental evidence that is not only practically unobtainable, but also theoretically so---especially given how property values are determined by an anonymous market and are thus not directly manipulable.
+
+However, this study does use the best data currently available to analyze the effects of traffic congestion on property values and, in turn, on the political dynamics of communities. We find that E-ZPasses, which bring about a sharp decline in traffic congestion and a sharp rise in property values, are also associated with a decrease in the Democratic two-party vote share. Moreover, in the short-term, E-ZPasses are not associated with large adjustments in the demographic equilibrium, allowing us to identify the effect of property values on voting returns. From a political economy perspective, this result could be interpreted as support for the view that rising property values are associated with an increase in conservative sentiment, as agents seek to maximize the benefits to be reaped from the change.
+
+Future study should address the following. Experimental work is needed to assess the individual-level effects of traffic congestion, which could plausibly confound our analysis. Does traffic congestion itself have an impact on voting behaviors? If so, to what extent do those effects reinforce or destabilize the link between changes in property value and voting? Future research should also address whether our findings hold up in other geographical contexts. Indeed, Chile, the United Arab Emirates, Canada, Israel, and other nations have implemented electronic tolling or other forms of traffic-reducing infrastructure. Hence, it seems that a similar analysis could be done using these settings, assuming that this infrastructure is correlated with an increase in the housing prices of nearby communities. 
+ 
+In the end, this work speaks to enduring questions about homeownership in the context of American politics. Homeowners are a key political constituency, especially given the decentralized nature of American democracy. Moreover, it has previously been shown that homeownership makes citizens more likely to vote, and (on average) may influence citizens to become more conservative than otherwise. But our work is among the first to examine another dimension of causality: what is the effect of changing property values on political behaviors? We have found evidence that exogenously increasing property values are associated with an increase in conservative sentiment. This finding suggests that wealth may have a self-reinforcing effect on political attitudes. Wealthy Americans are already more likely to be conservative than otherwise, and increases in their wealth may simply reinforce this attitude.\hfill $\square$ 
+
+\clearpage 
+\section*{Appendix}
+Note that the color scale for Figures \ref{colorgram_04} and \ref{colorgram_08} are the same, enabling direct comparisons to be made between the two graphs. The fact that the first column in the 2000/2008 comparison is both red and blue is reassuring. In the above, we argued that there are so few observations in the first column of Figure \ref{colorgram_04} that the estimates have high variance and are thus unreliable. We see both red and blue in the first column of Figure \ref{colorgram_08}, giving quantitative evidence of this variability. 
+
+\begin{figure}[htb!]
+\begin{center}
+\includegraphics[scale=0.45]{pa_nj_04.png}
+\caption{Robustness of the Effect to Treatment and Control Group Definition, 2000/2004 Comparison. To define treatment and control groups, one needs to define precincts as having received the benefit of traffic reduction via E-ZPass and those which did not receive such a benefit. Choosing a symmetric rule for getting included in either treated or control is not enough to prevent contamination, one must also exclude units from one group that are  either in or on the cusp of being in the opposite group.  The $x$-axis represents the distance to be excluded, the y-axis represents the distance within which one is excluded, and the color indicates the magnitude of the effect for that combination. Blue means more Democratic, Red means more Republican.  Also indicated is the number of matched treated units for each combination. An inclusion rule of 2 miles is likely too small because the small number of resuting matches, so the results indicated in that column are, we argue, untrustworthy. A star indicates significant effects (using pre-matching bootstrapped standard errors) at the 0.99 level.} 
+\label{colorgram_04}
+\end{center}
+\end{figure}
+
+\begin{figure}[htb!]
+\begin{center}
+\includegraphics[scale=0.45]{pa_nj_08.png}
+\caption{Robustness of the Effect to Treatment and Control Group Definition, 2000/2008 Comparison. A star indicates significant effects (using pre-matching bootstrapped standard errors) at the 0.99 level.} 
+\label{colorgram_08}
+\end{center}
+\end{figure}
+
+\begin{figure}[htb!]%
+    \centering
+    \subfloat[Placebo test (2000/2004 comparison)]{{\includegraphics[scale=0.39]{ohio_04.png} }}%
+    \quad
+    \subfloat[Non-placebo estimates (2008/2012 comparison)]{{\includegraphics[scale=0.39]{ohio_12.png} }}%
+   \caption{[a.] depicts the placebo analysis for Ohio from 2004. [b.] depicts the actual change in precinct-level vote share after the introduction of E-ZPass in 2009. The white boxes are present where there are no eligible units. A star indicates significant effects (using pre-matching bootstrapped standard errors) at the 0.99 level.}
+   \label{ohio}
+\end{figure}
+
+
+\begin{singlespace}
+\bibliography{mybib}
+\nocite{*}
+\bibliographystyle{acm}
+\end{singlespace}
+%bibliography is for MIT paper - must add citations from this paper. 
+%\printbibliography
+
+%To add to bibliography 
+%Currie, Janet, and Reed Walker. 2011. "Traffic Congestion and Infant Health: Evidence from E-ZPass." American Economic Journal: Applied Economics, 3(1): 65-90.
+
+%Daniel J. Hopkins and Thad Williamson. 2012. “Inactive by Design: The Elements of Suburban Sprawl that Reduce Political Participation.” Political Behavior. 34(1):79-101. 
+
+%James Wesley Scott. pages 147-167. A Networked Space of Meaning? Spatial Politics as Geostrategies of European Integration. Space and Polity. Volume 6, Issue 2, 2002 
+
+%Nall, Clayton (2014). "The Political Consequences of Spatial Policies: How Interstate Highways Facilitated Geographic Polarization." Journal of Politics 77(2): 
+
+% Edward C. Banfield Midwest Journal of Political Science Vol. 1, No. 1 (May, 1957), pp. 77-91 
+
+% International Journal of Urban and Regional  Research; Volume 24.2  June 2000. The Urban Question as a Scale Question: Reflections on Henri Lefebvre, Urban Theory and the Politics of Scale
+
+%Post-Industrial Cities: Politics and Planning in New York, Paris, and London, By H. V. Savitch; Princeton University Press in Princeton
+
+%Stephen G. Donald and Kevin Lang. Inference with Difference-in-Differences and Other Panel Data. May 2007, Vol. 89, No. 2, Pages 221-233
+
+%How Much Should We Trust Differences-In-Differences Estimates?*  Marianne Bertrand, Esther Duflo and Sendhil Mullainathan;   The Quarterly Journal of Economics (2004) 119 (1): 249-275. doi: 
+
+%Clayton Nall, Book manuscript. The Road to Division:  How the Interstate Highway System Polarized Metropolitan Areas and Changed the Politics of Place
+
+%David O. Sears and Carolyn L. Funk. The Journal of Behavioral Economics. Volume 19, Number 3, 247-271. 1990. 
+
+%D. Gordon Bagby. pages 88-94. Journal of the American Planning Association Volume 46, Issue 1, 1980. The Effects of Traffic Flow on Residential Property Values
+
+%Allan H. Meltzer and Scott F. Richard. The Journal of Political Economy, Volume 89, Issue 5 (Oct. 1981), 914-927. 
+
+%(Stephen Ansolabehere, Voters, Candidates, and Parties , The Oxford Handbook of Political Economy). Published 2006 
+
+%Sam Peltzman, "Towards a more general theory of regulation." Journal of Law and Economics, vol 19 (august 1976), p. 211-240. 
+
+%“Theory of economic regulation,” Bell Journal of Economics and Management Science, 2 (1): 3-21, 1971
+
+%A Rational Theory of the Size of Government. Allan H. Meltzer, Scott F. Richard. The Journal of Political Economy, Volume 89, Issue 5 (Oct. 1981), 914-927. 
+
+%The Paradox of Not Voting: A Decision Theoretic Analysis.John A. Ferejohn Morris P. Fiorina.  American Political Science Review 68 (June 1974):525-536. Paper:  sswp19c.pdf
+
+%Papers in Regional Science. 83 (1), 139-164 (2004). The new economic geography: Past, present, and the future. Masahisa Fujita and Paul Krugman. 
+
+%Demographic Change and Housing Wealth: Home-owners, Pensions and Asset-based Welfare in Europe. Doling, John, Elsinga, Marja. Springer (2012)
+
+%Toward a Theory of Gentrification A Back to the City Movement by Capital, not People. Journal of the American Planning Association Volume 45, Issue 4, 1979. 538-548. Neil Smith
+
+%Modeling gentrification dynamics: A hybrid approach. Computers, Environment and Urban Systems     Paul M. Torrens, , Atsushi Nara, Volume 31, Issue 3, May 2007, Pages 337–361. 
+
+%The Recently Recognized Failure of Predictability in Newtonian Dynamics. James Lighthill, J. M. T. Thompson, A. K. Sen, A. G. M. Last, D. T. Tritton, P. Mathias. September 1986. Volume: 407 Issue: 1832. Proceedings of the Royal Society of London
+
+%Political Analysis (2006) 14:131–159. Gary King. Langche Zeng. The Dangers of Extreme Counterfactuals. 
+
+%Egoistic Rationality and Public Choice: A Critical Review of Theory and Evidence. John Quiggin. Economic Record  Volume 63, Issue 1, pages 10–21, March 1987
+
+%good list of citations at http://www2.hawaii.edu/~sunki/paper/dis_chap1.pdf
+
+%Daron Acemoglu and James A. Robinson, 2009, Cambridge University Press. Economic Origins of Dictatorship and Democracy. 
+
+%Anthony Downs, An Economic Theory of Democracy (New York: Harper & Row, 1957), pp. 260-276. 
+
+%Frank Lovett, Rational Choice Theory and Explanation. article in Rationality and Society, 2006 18(2): 237-272. 
+
+%http://www.census.gov/housing/hvs/files/currenthvspress.pdf
+
+%http://poseidon01.ssrn.com/delivery.php?ID=573003097124109029098017030103067102004031054052030066103127096126127083090027071007006034063101028059032066027099005125069106046016071077042072001085095065121080062080082110091030001095068083006084123070127086094030116027006028024101081102018104086&EXT=pdf
+
+%Gilderbloom and Markham (1995) http://www.jstor.org/stable/2580460?seq=1#page_scan_tab_contents
+
+%Kingston, Thompson, Eichar, 1984
+%http://apr.sagepub.com/content/12/2/131.short
+
+%Swartz, 2008 http://www.palgrave-journals.com/cep/journal/v6/n3/abs/cep200811a.html
+
+%Brunner and Sonstelie (2003)
+%http://www.sciencedirect.com/science/article/pii/S0094119003000639
+
+%Harris (1999)
+%http://www.jstor.org/stable/2657496?seq=1#page_scan_tab_contents
+
+%Oates, 1969 http://www.jstor.org/stable/1837209?seq=1#page_scan_tab_contents
+
+%Doss and Taff (1996) http://www.jstor.org/stable/40986902?seq=1#page_scan_tab_contents
+
+%(Meltzer and Cheung, 2014) http://www.sciencedirect.com/science/article/pii/S0166046214000350
+
+%Kim, Park, and Kweon, 2007 http://www.sciencedirect.com/science/article/pii/S1361920907000260 
+
+%Bateman et al. (2001) http://www.gov.scot/resource/doc/158818/0043124.pdf
+
+%Frischtak and Mandel (2012) http://www.newyorkfed.org/research/staff_reports/sr542.pdf
+\end{document}
