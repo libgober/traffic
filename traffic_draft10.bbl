@@ -1,0 +1,951 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{anyt/global/}
+    \entry{Ansell2014}{article}{}
+      \name{author}{1}{}{%
+        {{hash=040676df892b6fc818021e33566aeb3a}{%
+           family={Ansell},
+           family_i={A\bibinitperiod},
+           given={Ben},
+           given_i={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{040676df892b6fc818021e33566aeb3a}
+      \strng{fullhash}{040676df892b6fc818021e33566aeb3a}
+      \field{labelalpha}{Ans14}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelyear}{2014}
+      \field{labelmonth}{05}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0003-0554}
+      \field{journaltitle}{American Political Science Review}
+      \field{month}{05}
+      \field{number}{02}
+      \field{title}{{The Political Economy of Ownership: Housing Markets and the Welfare State}}
+      \field{volume}{108}
+      \field{year}{2014}
+      \field{pages}{383\bibrangedash 402}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1017/S0003055414000045
+      \endverb
+      \verb{file}
+      \verb :Users/brianlibgober/Documents/Mendeley Desktop/American Political Science Review/Ansell/2014/Ansell - 2014 - The Political Economy of Ownership Housing Markets and the Welfare State - American Political Science Review.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://www.journals.cambridge.org/abstract%7B%5C_%7DS0003055414000045
+      \endverb
+    \endentry
+    \entry{Ansolabehere2014}{book}{}
+      \name{author}{3}{}{%
+        {{hash=b4eb159d441c4c0f7b14bb55b6e910c7}{%
+           family={Ansolabehere},
+           family_i={A\bibinitperiod},
+           given={Stephen},
+           given_i={S\bibinitperiod}}}%
+        {{hash=116b4f8190c4eaefb4cd6253e5c5db4e}{%
+           family={Palmer},
+           family_i={P\bibinitperiod},
+           given={Maxwell},
+           given_i={M\bibinitperiod}}}%
+        {{hash=8d680141bc7f7ee24b596cf9fba0d285}{%
+           family={Lee},
+           family_i={L\bibinitperiod},
+           given={Amanda},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Harvard Dataverse}%
+      }
+      \strng{namehash}{c8e265e97024d2b0891f2b2a006b6ff6}
+      \strng{fullhash}{af3347ab800a1704caa1ece170e05c63}
+      \field{labelalpha}{APL14}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{V1}
+      \field{title}{{Precinct-Level Election Data}}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://hdl.handle.net/1902.1/21919
+      \endverb
+    \endentry
+    \entry{Ansolabehere2008}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b4eb159d441c4c0f7b14bb55b6e910c7}{%
+           family={Ansolabehere},
+           family_i={A\bibinitperiod},
+           given={Stephen},
+           given_i={S\bibinitperiod}}}%
+        {{hash=e45e84dd5a00f5ce7c2db2028fd542db}{%
+           family={Rodden},
+           family_i={R\bibinitperiod},
+           given={Jonathan},
+           given_i={J\bibinitperiod}}}%
+        {{hash=831173b341b925a19e015bda949398e2}{%
+           family={Snyder},
+           family_i={S\bibinitperiod},
+           given={James\bibnamedelimb M.\bibnamedelimi Jr.},
+           given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{c8e265e97024d2b0891f2b2a006b6ff6}
+      \strng{fullhash}{49eb248bd0d71a4ce884e596823e7ef3}
+      \field{labelalpha}{ARS08}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelyear}{2008}
+      \field{labelmonth}{05}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{A venerable supposition of American survey research is that the vast majority of voters have incoherent and unstable preferences about political issues, which in turn have little impact on vote choice. We demonstrate that these findings are manifestations of measurement error associated with individual survey items. First, we show that averaging a large number of survey items on the same broadly defined issue area\x{fffd}\x{fffd}\x{fffd}for example, government involvement in the economy, or moral issues\x{fffd}\x{fffd}\x{fffd}eliminates a large amount of measurement error and reveals issue preferences that are well structured and stable. This stability increases steadily as the number of survey items increases and can approach that of party identification. Second, we show that once measurement error has been reduced through the use of multiple measures, issue preferences have much greater explanatory power in models of presidential vote choice, again approaching that of party identification.}
+      \field{issn}{1537-5943}
+      \field{journaltitle}{American Political Science Review}
+      \field{month}{05}
+      \field{number}{02}
+      \field{shorttitle}{The Strength of Issues}
+      \field{title}{{The Strength of Issues: Using Multiple Measures to Gauge Preference Stability, Ideological Constraint, and Issue Voting}}
+      \field{volume}{102}
+      \field{year}{2008}
+      \field{pages}{215\bibrangedash 232}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1017/S0003055408080210
+      \endverb
+      \verb{url}
+      \verb http://journals.cambridge.org/article%7B%5C_%7DS0003055408080210%20http://journals.cambridge.org.ezp-prod1.hul.harvard.edu/action/displayAbstract?fromPage=online%7B%5C&%7Daid=1893680%7B%5C&%7DfileId=S0003055408080210%20http://journals.cambridge.org.ezp-prod1.hul.harvard.edu/action/disp
+      \endverb
+    \endentry
+    \entry{Arunchalam}{article}{}
+      \name{author}{2}{}{%
+        {{hash=497f08c3416f6791cfad3f1767981a93}{%
+           family={Arunchalam},
+           family_i={A\bibinitperiod},
+           given={Raj},
+           given_i={R\bibinitperiod}}}%
+        {{hash=00f253466b90712d82913233c5c90eb8}{%
+           family={Watson},
+           family_i={W\bibinitperiod},
+           given={Sara},
+           given_i={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{f215b7e23577af5f06ae8f4aabd4343e}
+      \strng{fullhash}{f215b7e23577af5f06ae8f4aabd4343e}
+      \field{labelalpha}{AW}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelyear}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{British Journal of Political Science}
+      \field{title}{{Height, Income and Voting}}
+    \endentry
+    \entry{Bartels2010}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=10459cb1c78a1996652ab59f430f653a}{%
+           family={Bartels},
+           family_i={B\bibinitperiod},
+           given={Larry\bibnamedelima M.},
+           given_i={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=cd9249a96f306ae967feda9bf3347748}{%
+           family={Leighley},
+           family_i={L\bibinitperiod},
+           given={Jan\bibnamedelima E.},
+           given_i={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{10459cb1c78a1996652ab59f430f653a}
+      \strng{fullhash}{10459cb1c78a1996652ab59f430f653a}
+      \field{labelalpha}{Bar10}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{The Study of Electoral Behavior}}
+      \field{year}{2010}
+      \field{pages}{239\bibrangedash 261}
+      \range{pages}{23}
+    \endentry
+    \entry{Berelson1954}{book}{}
+      \name{author}{3}{}{%
+        {{hash=1e65689366616b5b7acb04a56b3dc6a7}{%
+           family={Berelson},
+           family_i={B\bibinitperiod},
+           given={Bernard\bibnamedelima R.},
+           given_i={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=16886e2ce6cba635bfba63c83a9b7d05}{%
+           family={Lazarsfeld},
+           family_i={L\bibinitperiod},
+           given={Paul\bibnamedelima F.},
+           given_i={P\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=d88577ee525ffd602ac89da53590e24d}{%
+           family={McPhee},
+           family_i={M\bibinitperiod},
+           given={WIlliam\bibnamedelima N.},
+           given_i={W\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Chicago}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \strng{namehash}{0e4e03e26b6957434d4eb409577f9c50}
+      \strng{fullhash}{d118e4d9fe65141a2fa1af7320d039fc}
+      \field{labelalpha}{BLM54}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{1954}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Voting: A Study of Opinion Formation in a Presidential Campaign}}
+      \field{year}{1954}
+    \endentry
+    \entry{Campbell1960}{book}{}
+      \name{author}{4}{}{%
+        {{hash=68bb1f4421c64b6768d46af7a3a8795e}{%
+           family={Campbell},
+           family_i={C\bibinitperiod},
+           given={Angus},
+           given_i={A\bibinitperiod}}}%
+        {{hash=a24e6e5d1139aa1cd2d31461d654ae09}{%
+           family={Converse},
+           family_i={C\bibinitperiod},
+           given={Philip\bibnamedelima E.},
+           given_i={P\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=bda2d3a9cc0d80ba4faee8a1e16db1fe}{%
+           family={Miller},
+           family_i={M\bibinitperiod},
+           given={Warren\bibnamedelima E.},
+           given_i={W\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=1c61bd1b82e33563aefbffed1ec82d17}{%
+           family={Stokes},
+           family_i={S\bibinitperiod},
+           given={Donald\bibnamedelima E.},
+           given_i={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{6b68610788ee0cfb062b3c0da4aae4a6}
+      \strng{fullhash}{5bb39273d694de04439baa0cd02be8fb}
+      \field{labelalpha}{Cam+60}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{1960}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Here is the unabridged version of the classic theoretical study of voting behavior, originally published in 1960. It is a standard reference in the field of electoral research, presenting formulations of the theoretical issues that have been the focus of scholarly publication. No single study matches the study of The American Voter.}
+      \field{isbn}{0226092542}
+      \field{issn}{00030554}
+      \field{title}{{The American Voter}}
+      \field{year}{1960}
+      \field{pages}{573}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.2307/1952653
+      \endverb
+    \endentry
+    \entry{Converse1966}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=a24e6e5d1139aa1cd2d31461d654ae09}{%
+           family={Converse},
+           family_i={C\bibinitperiod},
+           given={Philip\bibnamedelima E.},
+           given_i={P\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{a24e6e5d1139aa1cd2d31461d654ae09}
+      \strng{fullhash}{a24e6e5d1139aa1cd2d31461d654ae09}
+      \field{labelalpha}{Con66}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{1966}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Elections and Political Order}
+      \field{title}{{The Concept of a Normal Vote}}
+      \field{year}{1966}
+    \endentry
+    \entry{Gelman2007}{article}{}
+      \name{author}{4}{}{%
+        {{hash=1e1eb60e3b6e222217bf8e9b24070b28}{%
+           family={Gelman},
+           family_i={G\bibinitperiod},
+           given={Andrew},
+           given_i={A\bibinitperiod}}}%
+        {{hash=b149e4ab0d66371e096bceace22d03b8}{%
+           family={Shor},
+           family_i={S\bibinitperiod},
+           given={Boris},
+           given_i={B\bibinitperiod}}}%
+        {{hash=4d52e3097ffea4d2d4cfc8bbb1b94e69}{%
+           family={Bafumi},
+           family_i={B\bibinitperiod},
+           given={Joseph},
+           given_i={J\bibinitperiod}}}%
+        {{hash=776d6b560a5c8bc966d9d18611a1366d}{%
+           family={Park},
+           family_i={P\bibinitperiod},
+           given={David\bibnamedelima K.},
+           given_i={D\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{7b511f44eded88e08c98470ecd75568d}
+      \strng{fullhash}{149a5e0ef335a0cd4400ad4e480ebbba}
+      \field{labelalpha}{Gel+07}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{2007}
+      \field{labelmonth}{11}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{15540634}
+      \field{journaltitle}{Quarterly Journal of Political Science}
+      \field{month}{11}
+      \field{number}{4}
+      \field{title}{{Rich State, Poor State, Red State, Blue State: What's the Matter with Connecticut?}}
+      \field{volume}{2}
+      \field{year}{2007}
+      \field{pages}{345\bibrangedash 367}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1561/100.00006026
+      \endverb
+      \verb{file}
+      \verb :Users/brianlibgober/Documents/Mendeley Desktop/Quarterly Journal of Political Science/Gelman et al/2007/Gelman et al. - 2007 - Rich State, Poor State, Red State, Blue State What's the Matter with Connecticut - Quarterly Journal of Political.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://www.nowpublishers.com/article/Details/QJPS-6026
+      \endverb
+      \keyw{Political science,Statistics}
+    \endentry
+    \entry{Gelman2009}{book}{}
+      \name{author}{1}{}{%
+        {{hash=781f433f86c57dd89469991ec225b2f4}{%
+           family={Gelman},
+           family_i={G\bibinitperiod},
+           given={Andrew.},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{781f433f86c57dd89469991ec225b2f4}
+      \strng{fullhash}{781f433f86c57dd89469991ec225b2f4}
+      \field{labelalpha}{Gel09}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Expanded ed. Previous edition: 2008. On the night of the 2000 presidential election, Americans watched on television as polling results divided the nation's map into red and blue states. Since then the color divide has become symbolic of a culture war that thrives on stereotypes--pickup-driving red-state Republicans who vote based on God, guns, and gays; and elitist blue-state Democrats woefully out of touch with heartland values. With wit and prodigious number crunching, Andrew Gelman debunks these and other political myths. This expanded edition includes new data and easy-to-read graphics explaining the 2008 election. Red State.}
+      \field{isbn}{9781400832118}
+      \field{title}{{Red state, blue state, rich state, poor state why Americans vote the way they do}}
+      \field{year}{2009}
+      \field{pages}{253}
+      \range{pages}{1}
+    \endentry
+    \entry{Gerber2011}{article}{}
+      \name{author}{4}{}{%
+        {{hash=c0a1e3eb4d38c4a2992b12f5ea1cc42b}{%
+           family={Gerber},
+           family_i={G\bibinitperiod},
+           given={Alan\bibnamedelima S.},
+           given_i={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=fab1c6f90670c1b32f6c0b58ad1e293a}{%
+           family={Gimpel},
+           family_i={G\bibinitperiod},
+           given={James\bibnamedelima G.},
+           given_i={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=c898afc4f9e5d758bba6367b732a6cf4}{%
+           family={Green},
+           family_i={G\bibinitperiod},
+           given={Donald\bibnamedelima P.},
+           given_i={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=7d4cc8fe5580f28c3af1954729cbd90f}{%
+           family={Shaw},
+           family_i={S\bibinitperiod},
+           given={Daron\bibnamedelima R.},
+           given_i={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{feeafcaee7f3374477c961df72a3c1ae}
+      \strng{fullhash}{ca95a964dae656c698f1a5936531b52f}
+      \field{labelalpha}{Ger+11}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{2011}
+      \field{labelmonth}{02}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0003-0554}
+      \field{journaltitle}{American Political Science Review}
+      \field{month}{02}
+      \field{number}{01}
+      \field{title}{{How Large and Long-lasting Are the Persuasive Effects of Televised Campaign Ads? Results from a Randomized Field Experiment}}
+      \field{volume}{105}
+      \field{year}{2011}
+      \field{pages}{135\bibrangedash 150}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1017/S000305541000047X
+      \endverb
+      \verb{file}
+      \verb ::
+      \endverb
+      \verb{url}
+      \verb http://www.journals.cambridge.org/abstract%7B%5C_%7DS000305541000047X
+      \endverb
+    \endentry
+    \entry{Hibbs1987}{book}{}
+      \name{author}{1}{}{%
+        {{hash=29b0869a78e349228f8475f931a2f969}{%
+           family={Hibbs},
+           family_i={H\bibinitperiod},
+           given={Douglas\bibnamedelima A.},
+           given_i={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Harvard University Press}%
+      }
+      \strng{namehash}{29b0869a78e349228f8475f931a2f969}
+      \strng{fullhash}{29b0869a78e349228f8475f931a2f969}
+      \field{labelalpha}{Hib87}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{1987}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780674027350}
+      \field{title}{{The American Political Economy: Macroeconomics and Electoral Politics}}
+      \field{year}{1987}
+      \field{pages}{404}
+      \range{pages}{1}
+    \endentry
+    \entry{Hill2013}{article}{}
+      \name{author}{4}{}{%
+        {{hash=28854ff2007135e154f96ca85468fa5d}{%
+           family={Hill},
+           family_i={H\bibinitperiod},
+           given={Seth\bibnamedelima J.},
+           given_i={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=09de20fc004436c5699225d13073908d}{%
+           family={Lo},
+           family_i={L\bibinitperiod},
+           given={James},
+           given_i={J\bibinitperiod}}}%
+        {{hash=76124e204d6e54ed1d3813b35e0bbd72}{%
+           family={Vavreck},
+           family_i={V\bibinitperiod},
+           given={Lynn},
+           given_i={L\bibinitperiod}}}%
+        {{hash=5f36db14ba0055e9e020385f71b0cd10}{%
+           family={Zaller},
+           family_i={Z\bibinitperiod},
+           given={John},
+           given_i={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{a6d4eb27c92f9de0625d0a88c94bd9e2}
+      \strng{fullhash}{6a31cf1b5a78d98263ef7d20c20b9028}
+      \field{labelalpha}{Hil+13}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{2013}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Scholars do not usually test for the duration of the effects of mass communication, but when they do, they typically find rapid decay. Persuasive impact may end almost as soon as communication ends. Why so much decay? Does mass communication produce any long-term effects? How should this decay color our understanding of the effects of mass communication? We examine these questions with data from the effects of advertising in the 2000 presidential election and 2006 subnational elections, but argue that our model and results are broadly applicable within the field of political communication. We find that the bulk of the persuasive impact of advertising decays quickly, but that some effect in the presidential campaign endures for at least 6 weeks. These results, which are similar in rolling cross-section survey data and county-level data on actual presidential vote, appear to reflect a mix of memory-based processing (whose effects last only as long as short-term memory lasts) and online processing (whose eff...}
+      \field{journaltitle}{http://dx.doi.org/10.1080/10584609.2013.828143}
+      \field{title}{{How Quickly We Forget: The Duration of Persuasion Effects From Mass Communication}}
+      \field{year}{2013}
+      \keyw{advertising,decay,elections,mass communication}
+    \endentry
+    \entry{Hersh2015}{article}{}
+      \name{author}{2}{}{%
+        {{hash=52fd8699dd4ede8dc8011fd29e719d51}{%
+           family={Hersh},
+           family_i={H\bibinitperiod},
+           given={ED},
+           given_i={E\bibinitperiod}}}%
+        {{hash=c471196fef3afbdb2ee389becc0e04af}{%
+           family={Nall},
+           family_i={N\bibinitperiod},
+           given={C},
+           given_i={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{eca5df6022d58a8b0d7ebadd5e0e3c29}
+      \strng{fullhash}{eca5df6022d58a8b0d7ebadd5e0e3c29}
+      \field{labelalpha}{HN15}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{2015}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Journal of Political Science}
+      \field{title}{{The Primacy of Race in the Geography of Income\x{fffd}\x{fffd}\x{fffd}Based Voting: New Evidence from Public Voting Records}}
+      \field{year}{2015}
+      \verb{file}
+      \verb ::
+      \endverb
+      \verb{url}
+      \verb http://onlinelibrary.wiley.com/doi/10.1111/ajps.12179/pdf
+      \endverb
+    \endentry
+    \entry{Lazarsfeld1948}{book}{}
+      \name{author}{3}{}{%
+        {{hash=3d35ada46935d78d6f79ad7c3872d77d}{%
+           family={Lazarsfeld},
+           family_i={L\bibinitperiod},
+           given={Paul\bibnamedelima Felix},
+           given_i={P\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=9aeee01c32a717499746d1e9dc18e3bf}{%
+           family={Berelson},
+           family_i={B\bibinitperiod},
+           given={Bernard},
+           given_i={B\bibinitperiod}}}%
+        {{hash=618ec90fe9160fe416729a24eba4b4cc}{%
+           family={Gaudet},
+           family_i={G\bibinitperiod},
+           given={Hazel},
+           given_i={H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Columbia University Press}%
+      }
+      \strng{namehash}{a882f08131e312d3819eb0ef7e825f3e}
+      \strng{fullhash}{0db0cc97ef6413ce8db1de38b14a4a80}
+      \field{labelalpha}{LBG48}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{1948}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{The People's Choice: How the Voter Makes up His Mind in a Presidential Campaign}}
+      \field{year}{1948}
+    \endentry
+    \entry{LewisBeck2008}{incollection}{}
+      \name{author}{3}{}{%
+        {{hash=43e5b28923c1354deb8d82a13f75be02}{%
+           family={Lewis-Beck},
+           family_i={L\bibinithyphendelim B\bibinitperiod},
+           given={Michael\bibnamedelima S.},
+           given_i={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=261c88d0dfe2d88c15250172c49720f8}{%
+           family={Norpoth},
+           family_i={N\bibinitperiod},
+           given={Helmut},
+           given_i={H\bibinitperiod}}}%
+        {{hash=75706ff83ded549234659a63ef3e0928}{%
+           family={Jacoby},
+           family_i={J\bibinitperiod},
+           given={William.},
+           given_i={W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Ann Arbor, MI}%
+      }
+      \list{publisher}{1}{%
+        {University of Michigan Press}%
+      }
+      \strng{namehash}{9df7e4cee7deb955ccbff986f6715926}
+      \strng{fullhash}{8bc953830b50d3ac30b06379bdf32675}
+      \field{labelalpha}{LNJ08}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780472025138}
+      \field{title}{{American Voter Revisited}}
+      \field{year}{2008}
+    \endentry
+    \entry{Linn2010}{incollection}{}
+      \name{author}{3}{}{%
+        {{hash=f425044b3b6b5f6008b1cf40b36f48e6}{%
+           family={Linn},
+           family_i={L\bibinitperiod},
+           given={Suzanna},
+           given_i={S\bibinitperiod}}}%
+        {{hash=2d44e3039adc35df8bdfcf28ca3d927f}{%
+           family={Nagler},
+           family_i={N\bibinitperiod},
+           given={Jonathan},
+           given_i={J\bibinitperiod}}}%
+        {{hash=4192fba2e41f7fd81f9570e45b5d92b0}{%
+           family={Morales},
+           family_i={M\bibinitperiod},
+           given={Marco\bibnamedelima A.},
+           given_i={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=cd9249a96f306ae967feda9bf3347748}{%
+           family={Leighley},
+           family_i={L\bibinitperiod},
+           given={Jan\bibnamedelima E.},
+           given_i={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{15b1c9da3a2a0294ffe220661a3d4b40}
+      \strng{fullhash}{149d7f18f3b8d7d90f3477e22f191af0}
+      \field{labelalpha}{LNM10}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The Oxford Handbook of American Elections and Political Behavior}
+      \field{title}{{Economics, Elections, and Voting Behavior}}
+      \field{year}{2010}
+      \field{pages}{375\bibrangedash 396}
+      \range{pages}{22}
+    \endentry
+    \entry{Meltzer1981}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4bb48777f58a4765a67bd1c67473df90}{%
+           family={Meltzer},
+           family_i={M\bibinitperiod},
+           given={Allan\bibnamedelima H.},
+           given_i={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=2f8db256c50122e144193141bf6ac749}{%
+           family={Richard},
+           family_i={R\bibinitperiod},
+           given={Scott\bibnamedelima F.},
+           given_i={S\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{4a070c8e37d9a17ffcd5fb578baf525b}
+      \strng{fullhash}{4a070c8e37d9a17ffcd5fb578baf525b}
+      \field{labelalpha}{MR81}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{1981}
+      \field{labelmonth}{10}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In a general equilibrium model of a labor economy, the size of government, measured by the share of income redistributed, is determined by majority rule. Voters rationally anticipate the disincentive effects of taxation on the labor-leisure choices of their fellow citizens and take the effect into account when voting. The share of earned income redistributed depends on the voting rule and on the distribution of productivity in the economy. Under majority rule, the equilibrium tax share balances the budget and pays for the voters' choices. The principal reasons for increased size of government implied by the model are extensions of the franchise that change the position of the decisive voter in the income distribution and changes in relative productivity. An increase in mean income relative to the income of the decisive voter increases the size of government.}
+      \field{issn}{0022-3808}
+      \field{journaltitle}{Journal of Political Economy}
+      \field{month}{10}
+      \field{number}{5}
+      \field{title}{{A Rational Theory of the Size of Government}}
+      \field{volume}{89}
+      \field{year}{1981}
+      \field{pages}{914\bibrangedash 927}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1086/261013
+      \endverb
+      \verb{url}
+      \verb http://www.journals.uchicago.edu.ezp-prod1.hul.harvard.edu/doi/10.1086/261013%20http://www.journals.uchicago.edu.ezp-prod1.hul.harvard.edu/doi/pdfplus/10.1086/261013
+      \endverb
+    \endentry
+    \entry{Meltzer1975}{article}{}
+      \name{author}{2}{}{%
+        {{hash=300d69c7b3ce13d5d77af0acc23d50f9}{%
+           family={Meltzer},
+           family_i={M\bibinitperiod},
+           given={AH},
+           given_i={A\bibinitperiod}}}%
+        {{hash=8e764692d645d1583993a8cefd55d614}{%
+           family={Vellrath},
+           family_i={V\bibinitperiod},
+           given={M},
+           given_i={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e3ea01a92a2b252ac23fbeeea3342377}
+      \strng{fullhash}{e3ea01a92a2b252ac23fbeeea3342377}
+      \field{labelalpha}{MV75}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{1975}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Law {\&} Economics}
+      \field{title}{{The effects of economic policies on votes for the presidency: Some evidence from recent elections}}
+      \field{year}{1975}
+      \verb{url}
+      \verb http://www.jstor.org/stable/725062
+      \endverb
+    \endentry
+    \entry{Nie1976}{book}{}
+      \name{author}{3}{}{%
+        {{hash=ac52dbf4f1cd9c5d274b253b9ea1f49d}{%
+           family={Nie},
+           family_i={N\bibinitperiod},
+           given={Norman\bibnamedelima H},
+           given_i={N\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=63212cdbac81056aded49c950d1dd6dc}{%
+           family={Verba},
+           family_i={V\bibinitperiod},
+           given={Sidney},
+           given_i={S\bibinitperiod}}}%
+        {{hash=e6c35a18eb8815a531dc6f5c63be32ae}{%
+           family={Petrocik},
+           family_i={P\bibinitperiod},
+           given={John\bibnamedelima R},
+           given_i={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{location}{1}{%
+        {Cambridge, Mass.}%
+      }
+      \list{publisher}{1}{%
+        {Harvard University Press}%
+      }
+      \strng{namehash}{961bc431dc2fc29924662faec23dd6dd}
+      \strng{fullhash}{97e69e877f0919e6c9a1e50e101bb246}
+      \field{labelalpha}{NVP79}
+      \field{sortinit}{N}
+      \field{sortinithash}{925374ca63e7594de7fafdb83e64d41d}
+      \field{labelyear}{1979}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-674-10815-8 978-0-674-10816-5}
+      \field{title}{{The changing American voter}}
+      \field{year}{1979}
+    \endentry
+    \entry{Roberts1977}{article}{}
+      \name{author}{1}{}{%
+        {{hash=951a92a56e91b7728865b646e3eabfc2}{%
+           family={Roberts},
+           family_i={R\bibinitperiod},
+           given={Kevin\bibnamedelima W.S.},
+           given_i={K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {North-Holland}%
+      }
+      \strng{namehash}{951a92a56e91b7728865b646e3eabfc2}
+      \strng{fullhash}{951a92a56e91b7728865b646e3eabfc2}
+      \field{labelalpha}{Rob77}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelyear}{1977}
+      \field{labelmonth}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00472727}
+      \field{journaltitle}{Journal of Public Economics}
+      \field{month}{12}
+      \field{number}{3}
+      \field{title}{{Voting over income tax schedules}}
+      \field{volume}{8}
+      \field{year}{1977}
+      \field{pages}{329\bibrangedash 340}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/0047-2727(77)90005-6
+      \endverb
+      \verb{url}
+      \verb http://linkinghub.elsevier.com/retrieve/pii/0047272777900056
+      \endverb
+    \endentry
+    \entry{Romer1975}{article}{}
+      \name{author}{1}{}{%
+        {{hash=bb005552d88a659bcfbbd6cca9b84ab3}{%
+           family={Romer},
+           family_i={R\bibinitperiod},
+           given={Thomas},
+           given_i={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {North-Holland}%
+      }
+      \strng{namehash}{bb005552d88a659bcfbbd6cca9b84ab3}
+      \strng{fullhash}{bb005552d88a659bcfbbd6cca9b84ab3}
+      \field{labelalpha}{Rom75}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelyear}{1975}
+      \field{labelmonth}{02}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00472727}
+      \field{journaltitle}{Journal of Public Economics}
+      \field{month}{02}
+      \field{number}{2}
+      \field{title}{{Individual welfare, majority voting, and the properties of a linear income tax}}
+      \field{volume}{4}
+      \field{year}{1975}
+      \field{pages}{163\bibrangedash 185}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1016/0047-2727(75)90016-X
+      \endverb
+      \verb{url}
+      \verb http://linkinghub.elsevier.com/retrieve/pii/004727277590016X
+      \endverb
+    \endentry
+    \entry{Smith989}{book}{}
+      \name{author}{1}{}{%
+        {{hash=21aa889d89830e03d1835008585af82f}{%
+           family={Smith},
+           family_i={S\bibinitperiod},
+           given={Eric\bibnamedelima R.A.N.},
+           given_i={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berkeley, CA}%
+      }
+      \list{publisher}{1}{%
+        {University of California Press}%
+      }
+      \strng{namehash}{21aa889d89830e03d1835008585af82f}
+      \strng{fullhash}{21aa889d89830e03d1835008585af82f}
+      \field{labelalpha}{Smi89}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{1989}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{The Unchanging American Voter}}
+      \field{year}{1989}
+    \endentry
+    \entry{Stanley2006a}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f9d2ffa027ad2e2e69a2a2c0d04dd45f}{%
+           family={Stanley},
+           family_i={S\bibinitperiod},
+           given={Harold\bibnamedelima W.},
+           given_i={H\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=54f03556f818efd9a2177b460d14c4e9}{%
+           family={Niemi},
+           family_i={N\bibinitperiod},
+           given={Richard\bibnamedelima G.},
+           given_i={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{89d0d42f79a54f8e7a3de3d68844a5d9}
+      \strng{fullhash}{89d0d42f79a54f8e7a3de3d68844a5d9}
+      \field{labelalpha}{SN06}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelyear}{2006}
+      \field{labelmonth}{06}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recent changes in partisan support suggest the beginning of a new group basis for the party coalitions. For the Republicans, the changes define group support more sharply than has been the case for many years\x{fffd}\x{fffd}\x{fffd}a combination of southern whites and a strong religious base of Catholics, regular church-goers, and Protestant fundamentalists. For Democrats, the changes are defined in terms of losses\x{fffd}\x{fffd}\x{fffd}of Catholic, union household, and regular church-going voters\x{fffd}\x{fffd}\x{fffd}not sufficiently offset by the increased support of women and the growing Hispanic population. The problem for Republicans is to maintain and enhance a heterogeneous coalition, including a fragile religious combination. The problem for Democrats is to find new coalition partners or regain support that the party has lost.}
+      \field{issn}{1741-5705}
+      \field{journaltitle}{Presidential Studies Quarterly}
+      \field{month}{06}
+      \field{number}{2}
+      \field{title}{{Partisanship, Party Coalitions, and Group Support, 1952-2004}}
+      \field{volume}{36}
+      \field{year}{2006}
+      \field{pages}{172\bibrangedash 188}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1111/j.1741-5705.2006.00297.x
+      \endverb
+      \verb{url}
+      \verb http://onlinelibrary.wiley.com.ezp-prod1.hul.harvard.edu/doi/10.1111/j.1741-5705.2006.00297.x/abstract%20http://onlinelibrary.wiley.com.ezp-prod1.hul.harvard.edu/doi/10.1111/j.1741-5705.2006.00297.x/full%20http://onlinelibrary.wiley.com.ezp-prod1.hul.harvard.
+      \endverb
+    \endentry
+    \entry{Tufte1975}{article}{}
+      \name{author}{1}{}{%
+        {{hash=39f24945c28c46e59581178402656060}{%
+           family={Tufte},
+           family_i={T\bibinitperiod},
+           given={ER},
+           given_i={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{39f24945c28c46e59581178402656060}
+      \strng{fullhash}{39f24945c28c46e59581178402656060}
+      \field{labelalpha}{Tuf75}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{1975}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Political Science Review}
+      \field{title}{{Determinants of the outcomes of midterm congressional elections}}
+      \field{year}{1975}
+      \verb{url}
+      \verb http://journals.cambridge.org/abstract%7B%5C_%7DS0003055400243645
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
