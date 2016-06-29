@@ -1,21 +1,21 @@
 [0] Config.pm:343> INFO - This is Biber 2.5
 [0] Config.pm:346> INFO - Logfile is 'traffic_draft10.blg'
-[61] biber-darwin:290> INFO - === Wed Jun 22, 2016, 13:58:56
-[88] Biber.pm:351> INFO - Reading 'traffic_draft10.bcf'
-[187] Biber.pm:773> INFO - Using all citekeys in bib section 0
-[205] Biber.pm:3493> INFO - Processing section 0
-[224] Biber.pm:3657> INFO - Looking for bibtex format file 'ConnorBrian.bib' for section 0
-[227] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
-[231] bibtex.pm:1048> INFO - Found BibTeX data source 'ConnorBrian.bib'
-[288] Utils.pm:149> WARN - ISBN '978-0-674-10815-8 978-0-674-10816-5' in entry 'Nie1976' is invalid - run biber with '--validate_datamodel' for details.
-[294] Utils.pm:149> WARN - BibTeX subsystem: /var/folders/p2/nkftf47s5vb8zr6slgc7fc940000gn/T/seGB8zkP0K/ConnorBrian.bib_17847.utf8, line 6, warning: 176 characters of junk seen at toplevel
-[378] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[378] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[378] Biber.pm:3306> INFO - Sorting list 'anyt/global/' of type 'entry' with scheme 'anyt' and locale 'en-US'
-[379] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
-[419] bbl.pm:526> INFO - Writing 'traffic_draft10.bbl' with encoding 'ascii'
-[424] Utils.pm:149> WARN - The entry 'Ansolabehere2008' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
-[428] Utils.pm:149> WARN - The entry 'Hersh2015' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
-[432] Utils.pm:149> WARN - The entry 'Stanley2006a' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
-[433] bbl.pm:619> INFO - Output to traffic_draft10.bbl
-[433] Biber.pm:108> INFO - WARNINGS: 5
+[63] biber-darwin:290> INFO - === Wed Jun 29, 2016, 10:15:19
+[89] Biber.pm:351> INFO - Reading 'traffic_draft10.bcf'
+[200] Biber.pm:773> INFO - Using all citekeys in bib section 0
+[215] Biber.pm:3493> INFO - Processing section 0
+[242] Biber.pm:3657> INFO - Looking for bibtex format file 'ConnorBrian.bib' for section 0
+[246] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
+[249] bibtex.pm:1048> INFO - Found BibTeX data source 'ConnorBrian.bib'
+[302] Utils.pm:149> WARN - ISBN '978-0-674-10815-8 978-0-674-10816-5' in entry 'Nie1976' is invalid - run biber with '--validate_datamodel' for details.
+[313] Utils.pm:149> WARN - BibTeX subsystem: /var/folders/p2/nkftf47s5vb8zr6slgc7fc940000gn/T/VOGFTLPInA/ConnorBrian.bib_23487.utf8, line 6, warning: 176 characters of junk seen at toplevel
+[411] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[411] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[411] Biber.pm:3306> INFO - Sorting list 'anyt/global/' of type 'entry' with scheme 'anyt' and locale 'en-US'
+[411] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
+[460] bbl.pm:526> INFO - Writing 'traffic_draft10.bbl' with encoding 'ascii'
+[464] Utils.pm:149> WARN - The entry 'Ansolabehere2008' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[470] Utils.pm:149> WARN - The entry 'Hersh2015' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[475] Utils.pm:149> WARN - The entry 'Stanley2006a' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[476] bbl.pm:619> INFO - Output to traffic_draft10.bbl
+[477] Biber.pm:108> INFO - WARNINGS: 5

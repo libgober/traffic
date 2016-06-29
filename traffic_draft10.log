@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  23 JUN 2016 10:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  29 JUN 2016 10:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -416,12 +416,12 @@ tions/RD.tex
 (./Sections/RD_Subsections/SectionIntro.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 1.
-)
+) [2]
 (./Sections/RD_Subsections/Data.tex
 
-LaTeX Warning: Citation 'Currie2011' on page 2 undefined on input line 1.
+LaTeX Warning: Citation 'Currie2011' on page 3 undefined on input line 1.
 
-[2]) (./Sections/RD_Subsections/RDLogic.tex [3])) (./Sections/Robustness.tex)
+) (./Sections/RD_Subsections/RDLogic.tex [3])) (./Sections/Robustness.tex)
 (./Sections/Conclusion.tex) 
 AED: lastpage setting LastPage
 [4] (./traffic_draft10.aux)
@@ -438,13 +438,13 @@ Package logreq Info: Writing requests to 'traffic_draft10.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 7396 strings out of 493014
- 128591 string characters out of 6133351
- 542971 words of memory out of 5000000
- 10859 multiletter control sequences out of 15000+600000
+ 7404 strings out of 493014
+ 128828 string characters out of 6133351
+ 545060 words of memory out of 5000000
+ 10867 multiletter control sequences out of 15000+600000
  9453 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,11n,51p,3001b,1053s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,10n,51p,2387b,1053s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -459,7 +459,7 @@ e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2
 016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/20
 16/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on traffic_draft10.pdf (4 pages, 173332 bytes).
+Output written on traffic_draft10.pdf (4 pages, 174817 bytes).
 PDF statistics:
  73 PDF objects out of 1000 (max. 8388607)
  52 compressed objects within 1 object stream

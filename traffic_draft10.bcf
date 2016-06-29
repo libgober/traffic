@@ -2118,12 +2118,17 @@
     <bcf:citekey order="9">Gelman2007</bcf:citekey>
     <bcf:citekey order="10">Hersh2015</bcf:citekey>
     <bcf:citekey order="11">Gelman2007</bcf:citekey>
-    <bcf:citekey order="12">Gerber2011</bcf:citekey>
-    <bcf:citekey order="13">Arunchalam</bcf:citekey>
-    <bcf:citekey order="14">Ansell2014</bcf:citekey>
-    <bcf:citekey order="15">Currie2011</bcf:citekey>
-    <bcf:citekey order="16">Ansolabehere2014</bcf:citekey>
-    <bcf:citekey order="17">Ansolabehere2014</bcf:citekey>
+    <bcf:citekey order="12">Arunchalam</bcf:citekey>
+    <bcf:citekey order="13">Ansell2014</bcf:citekey>
+    <bcf:citekey order="14">Thunen1826</bcf:citekey>
+    <bcf:citekey order="15">Alonso</bcf:citekey>
+    <bcf:citekey order="15">Fujita1999</bcf:citekey>
+    <bcf:citekey order="15">BaumSnow2007</bcf:citekey>
+    <bcf:citekey order="16">Currie2011a</bcf:citekey>
+    <bcf:citekey order="17">NJT2001</bcf:citekey>
+    <bcf:citekey order="18">Currie2011</bcf:citekey>
+    <bcf:citekey order="19">Ansolabehere2014</bcf:citekey>
+    <bcf:citekey order="20">Ansolabehere2014</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
 </bcf:controlfile>

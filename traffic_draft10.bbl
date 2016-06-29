@@ -19,6 +19,32 @@
 
 \refsection{0}
   \sortlist[entry]{anyt/global/}
+    \entry{Alonso}{book}{}
+      \name{author}{1}{}{%
+        {{hash=36d38614bdd384f3f9742933a71d3293}{%
+           family={Alonso},
+           family_i={A\bibinitperiod},
+           given={William},
+           given_i={W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA}%
+      }
+      \list{publisher}{1}{%
+        {Harvard University Press}%
+      }
+      \strng{namehash}{36d38614bdd384f3f9742933a71d3293}
+      \strng{fullhash}{36d38614bdd384f3f9742933a71d3293}
+      \field{labelalpha}{Alo64}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelyear}{1964}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Location and land use : toward a general theory of land rent}}
+      \field{year}{1964}
+    \endentry
     \entry{Ansell2014}{article}{}
       \name{author}{1}{}{%
         {{hash=040676df892b6fc818021e33566aeb3a}{%
@@ -142,6 +168,31 @@
       \verb http://journals.cambridge.org/article%7B%5C_%7DS0003055408080210%20http://journals.cambridge.org.ezp-prod1.hul.harvard.edu/action/displayAbstract?fromPage=online%7B%5C&%7Daid=1893680%7B%5C&%7DfileId=S0003055408080210%20http://journals.cambridge.org.ezp-prod1.hul.harvard.edu/action/disp
       \endverb
     \endentry
+    \entry{NJT2001}{report}{}
+      \name{author}{1}{}{%
+        {{hash=ac531af567b344ee86512bf19f540fdc}{%
+           family={{Authority New Jersey Turnpike}},
+           family_i={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Wilbur Smith Associates}%
+      }
+      \list{location}{1}{%
+        {New Brunswick}%
+      }
+      \strng{namehash}{ac531af567b344ee86512bf19f540fdc}
+      \strng{fullhash}{ac531af567b344ee86512bf19f540fdc}
+      \field{labelalpha}{Aut01}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labelyear}{2001}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Operational and Traffic Benefits of E-ZPass Deployment to the New Jersey Turnpike}}
+      \field{type}{techreport}
+      \field{year}{2001}
+    \endentry
     \entry{Arunchalam}{article}{}
       \name{author}{2}{}{%
         {{hash=497f08c3416f6791cfad3f1767981a93}{%
@@ -200,6 +251,34 @@
       \field{year}{2010}
       \field{pages}{239\bibrangedash 261}
       \range{pages}{23}
+    \endentry
+    \entry{BaumSnow2007}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3ab304f229ed273705b65bd10541d9e3}{%
+           family={Baum-Snow},
+           family_i={B\bibinithyphendelim S\bibinitperiod},
+           given={Nathaniel},
+           given_i={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{3ab304f229ed273705b65bd10541d9e3}
+      \strng{fullhash}{3ab304f229ed273705b65bd10541d9e3}
+      \field{labelalpha}{Bau07}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Quarterly Journal of Economics}
+      \field{number}{2}
+      \field{title}{{Did highways cause suburbanization?}}
+      \field{volume}{122}
+      \field{year}{2007}
+      \field{pages}{775\bibrangedash 805}
+      \range{pages}{31}
+      \verb{file}
+      \verb :Users/brianlibgober/Documents/Mendeley Desktop/Quarterly Journal of Economics/Baum-Snow/2007/Baum-Snow - 2007 - Did highways cause suburbanization - Quarterly Journal of Economics.pdf:pdf
+      \endverb
     \endentry
     \entry{Berelson1954}{book}{}
       \name{author}{3}{}{%
@@ -312,6 +391,81 @@
       \field{booktitle}{Elections and Political Order}
       \field{title}{{The Concept of a Normal Vote}}
       \field{year}{1966}
+    \endentry
+    \entry{Currie2011a}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c740e1c3a89d6974ff6cbc7e787f8b3a}{%
+           family={Currie},
+           family_i={C\bibinitperiod},
+           given={Janet},
+           given_i={J\bibinitperiod}}}%
+        {{hash=16bbc59bc9faa239c748fa1ea9f22a54}{%
+           family={Walker},
+           family_i={W\bibinitperiod},
+           given={Reed},
+           given_i={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{9a9e68aa3e4613e1a99d830f73ae391c}
+      \strng{fullhash}{9a9e68aa3e4613e1a99d830f73ae391c}
+      \field{labelalpha}{CW11}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{2011}
+      \field{labelmonth}{01}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1945-7782}
+      \field{journaltitle}{American Economic Journal: Applied Economics}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{{Traffic Congestion and Infant Health: Evidence from E-ZPass}}
+      \field{volume}{3}
+      \field{year}{2011}
+      \field{pages}{65\bibrangedash 90}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1257/app.3.1.65
+      \endverb
+      \verb{url}
+      \verb http://pubs.aeaweb.org/doi/abs/10.1257/app.3.1.65
+      \endverb
+    \endentry
+    \entry{Fujita1999}{book}{}
+      \name{author}{3}{}{%
+        {{hash=7b0959582d547d10fda4471c0ba3842a}{%
+           family={Fujita},
+           family_i={F\bibinitperiod},
+           given={Masahisa},
+           given_i={M\bibinitperiod}}}%
+        {{hash=7c8be70608634d5dc79f4ab27c7f7eb5}{%
+           family={Krugman},
+           family_i={K\bibinitperiod},
+           given={Paul\bibnamedelima R},
+           given_i={P\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=be6571d74bf06e5ab6630c0709a015a8}{%
+           family={Venables},
+           family_i={V\bibinitperiod},
+           given={Anthony},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{673491d6132c59b8b4e1aa76e9bd94f6}
+      \strng{fullhash}{99ecad490dd897f58d9fc73d856ce187}
+      \field{labelalpha}{FKV99}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{1999}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{The spatial economy : cities, regions and international trade}}
+      \field{year}{1999}
     \endentry
     \entry{Gelman2007}{article}{}
       \name{author}{4}{}{%
@@ -920,6 +1074,28 @@
       \verb{url}
       \verb http://onlinelibrary.wiley.com.ezp-prod1.hul.harvard.edu/doi/10.1111/j.1741-5705.2006.00297.x/abstract%20http://onlinelibrary.wiley.com.ezp-prod1.hul.harvard.edu/doi/10.1111/j.1741-5705.2006.00297.x/full%20http://onlinelibrary.wiley.com.ezp-prod1.hul.harvard.
       \endverb
+    \endentry
+    \entry{Thunen1826}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ec4377255bdb87ec879fdb4aa5c3519e}{%
+           prefix={von},
+           prefix_i={v\bibinitperiod},
+           family={Thunen},
+           family_i={T\bibinitperiod},
+           given={Johann\bibnamedelima Heinrich.},
+           given_i={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{ec4377255bdb87ec879fdb4aa5c3519e}
+      \strng{fullhash}{ec4377255bdb87ec879fdb4aa5c3519e}
+      \field{labelalpha}{Thu26}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelyear}{1826}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Der isolierte Staat}}
+      \field{year}{1826}
     \endentry
     \entry{Tufte1975}{article}{}
       \name{author}{1}{}{%
