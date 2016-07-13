@@ -1,7 +1,20 @@
-\begin{table}[!htbp] \centering 
-  \caption{Pre-treatment balance. Data from the 2000 Census. 
-                           Sample size: 1324 treated and 1324 control units.} 
-  \label{balance_table} 
+
+For the diff-in-diff analysis, our goal is to construct comparable treated and control groups. We do so by selecting precincts which are no more than a fixed distance away from E-ZPass or non-E-ZPass exits. Although it is reasonable to think of EZ-Pass introduction as an exogenous shock, independent of changes in Democratic vote share between the 2000 and 2004 elections, it is nonetheless still possible that the precincts we identify as ``treated'' systematically differ from ``control'' precincts near non-E-ZPass exits in terms of relevant background covariates. If this were to be the case, our estimates for the causal effect of E-ZPass might be partly confounded by the differing baseline characteristics of the treated and control groups. To protect against this possibility, we use matching to find a subset of the data that is well-balanced in terms of relevant covariates. Matching also reduces model sensitivity \parencite{Ho2007}, narrowing the range of estimated effects. In the matching routine, we use propensity score matching with a caliper of $0.20$. Matching was done without replacement. We also attempted Mahalanobis distance matching and coarsened exact matching, but these approaches gave poorer balance. Table~\vref{balance_table} presents summary statistics useful for analyzing covariate balance between matched units, while Figure~\ref{matches} presents a map showing which units have been placed in treatment and control. We find that treated and control communities are very similar on background covariates such as average income, percentage of the population over the age of 65, percentage of the population living in the same house as in 1995, percentage of the population which is female, and percentage of the population holding a bachelor's or professional degree. 
+
+
+
+
+
+\begin{figure}[!htb]
+    \centering
+    \caption{Illustration of matches.  The tiles indicate change in democratic vote share between 2000 and 2004, with bluer areas resulting in a Democratic shift in vote share, and red a more Republican shift in vote share. The green boxes indicating treated units and brown shields indicating control.}
+ \includegraphics[width=0.9\textwidth]{Figures/MatchesMap_final.eps}
+\label{matches}
+\end{figure}
+
+\begin{table}[!htb] 
+    \label{balance_table} 
+    \centering  
 \resizebox{\textwidth}{!}{\begin{tabular}{@{\extracolsep{5pt}} ccccccccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
@@ -9,13 +22,20 @@
 & \multicolumn{2}{c}{\textemdash} & \multicolumn{2}{c}{\textemdash} & \multicolumn{2}{c}{\textemdash} & \multicolumn{2}{c}{\textemdash}\\
  & Mean & (S.D.) & Mean & (S.D.) & Mean & (S.D.) & Dif. & (S.D) \\ 
 \hline \\[-1.8ex] 
-Average income & \$61030.94 & (34783.57) & \$61497.61 & (30444.52) & \$60564.26 & (38642.63) & \$933.36 & (1235.67) \\ 
-\% bachelors & 16.3 & (9.3) & 16.37 & (8.5) & 16.23 & (10.03) & 0.14 & (0.33) \\ 
-\% black & 4.86 & (11.43) & 5.76 & (12.45) & 3.95 & (10.23) & 1.81 & (0.4) \\ 
-\% professional degree & 51.49 & (3.03) & 51.57 & (2.69) & 51.41 & (3.34) & 0.16 & (0.11) \\ 
-\% female & 15 & (6.94) & 14.98 & (7.67) & 15.03 & (6.13) & -0.05 & (0.25) \\ 
-\% of pop. over 65 & 2.2 & (2.53) & 2.21 & (2.68) & 2.2 & (2.37) & 0.01 & (0.09) \\ 
-\% in same house as in '95 & 62.66 & (11.73) & 62.67 & (11.56) & 62.65 & (11.91) & 0.03 & (0.42) \\ 
+\emph{Average income} & \$61030.94 & (34783.57) & \$61497.61 & (30444.52) & \$60564.26 & (38642.63) & \$933.36 & (1235.67) \\ 
+\emph{\% bachelors} & 16.3 & (9.3) & 16.37 & (8.5) & 16.23 & (10.03) & 0.14 & (0.33) \\ 
+\emph{\% black} & 4.86 & (11.43) & 5.76 & (12.45) & 3.95 & (10.23) & 1.81 & (0.4) \\ 
+\emph{\% professional degree} & 51.49 & (3.03) & 51.57 & (2.69) & 51.41 & (3.34) & 0.16 & (0.11) \\ 
+\emph{\% female} & 15 & (6.94) & 14.98 & (7.67) & 15.03 & (6.13) & -0.05 & (0.25) \\ 
+\emph{\% of pop. over 65} & 2.2 & (2.53) & 2.21 & (2.68) & 2.2 & (2.37) & 0.01 & (0.09) \\ 
+\emph{\% in same house as in '95} & 62.66 & (11.73) & 62.67 & (11.56) & 62.65 & (11.91) & 0.03 & (0.42) \\ 
 \hline \\[-1.8ex] 
-\end{tabular} }
+\end{tabular}}
+  \caption{Pre-treatment balance. Data from the 2000 Census. 
+                           Sample size: 1324 treated and 1324 control
+                           units.}
 \end{table} 
+    
+
+Although our matching methods acheived balance on a number of covariates the literature has generally considered significant at predicting long-term voting behavior, treated units had an average African-American population of about 6\% while control units had an average African-American population of about 4\%. Because our $n$ is large, this difference was statistically significant. It is a concern, therefore, that changes in racial voting behavior between the 2000 and 2004 election could explain some of our results. The fact that the black population is so small in both groups decrease this possibility, however as a precaution we provide here a brief analysis of exit poll and turnout data for each state and each election year, in order to estimate how changes in African-American and non-African American voting behavior might effect our results. According to these exit polls, Gore was supported by 90.5\% of black voters and 51.4\% of other voters, while Kerry was suppoted by only 83.4\% of black voters and 47.3\% of other voters.\footnote{Here, all figures correspond to two-party vote, consistent with the approach taken throughout the paper. Individuals who say they supported Nader or some other candidate are therefore dropped in our analysis of these exit polls.}  At the same time, about 53\% of the black population and 56\% of the non-black population voted in 2000, while 61\% of the black population and 66\% of the non-black population voted in 2004. Assuming that these estimates of average turnout and support by race are the same in treated and control units, we can estimate the difference-in-difference in two-party vote share purely due to racial imbalance as being about -0.0007. \footnote{Formally, we use the following equation: $$(\frac{ T_B^{04} D_B^{04} +  T_O^{04}  D_O^{04}}{ T_B^{04} +  T_O^{04}} - \frac{ T_B^{00} D_B^{00} +  T_O^{00}  D_O^{00}}{ T_B^{00} +  T_B^{00}}) - (\frac{ C_B^{04} D_B^{04} +  C_O^{04}  D_O^{04}}{ C_B^{04} +  C_B^{04}} - \frac{ C_B^{00} D_B^{00} +  C_O^{00}  D_O^{00}}{ C_B^{00} +  C_B^{00}}) $$ 
+Here, $T_B^{0X}$ is the fraction of the black population that voted in the year $200X$ multiplied by the fraction of the population that is black in the treated units, while $T_O^{0X}$ indicates the fraction of the population that voted among other races times the fraction of the population that is not-black.  $D_B^{0X}$, $D_O^{0X}$ indicates the proportion of blacks and non-blacks who supported the democratic Presidential candidate in year '$0X$. $C_B^{0X}$ is the fraction of the black population that voted in the year $200X$ multiplied by the fraction of the population that is black in the control units, with $C_O^{XX}$ is defined analogously.} Looking ahead, we will see that this is two orders of magnitude smaller than the effect we found. Thus, racial imbalance between treated and control does not seem to pose a serious threat to our analysis of voting behavior.

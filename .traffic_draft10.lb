@@ -9,59 +9,33 @@ c__builtin__
 set
 p4
 ((lp5
-Vauthblk
+Vgeometry
 p6
-aVfancyhdr
-p7
-aVgeometry
-p8
-aVbiblatex
-p9
-aVnicefrac
-p10
-aVsubcaption
-p11
-aVcaption
-p12
-aVepstopdf
-p13
-aVgraphicx
-p14
 aVlastpage
-p15
-atp16
-Rp17
+p7
+aVfancyhdr
+p8
+aVauthblk
+p9
+aVbiblatex
+p10
+atp11
+Rp12
 sVfiles_with_guttermarks
-p18
+p13
 g4
-((lp19
-V/Users/brianlibgober/Dropbox/Collaborations/Traffic/Paper Drafts/Paper Draft - Publication Prep/Sections/RD_Subsections/Weather.tex
-p20
+((lp14
+V/Users/brianlibgober/Dropbox/Collaborations/Traffic/Paper Drafts/Paper Draft - Publication Prep/Sections/RD_Subsections/Data.tex
+p15
 aV/Users/brianlibgober/Dropbox/Collaborations/Traffic/Paper Drafts/Paper Draft - Publication Prep/Sections/Literature_Review.tex
-p21
-aV/Users/brianlibgober/Dropbox/Collaborations/Traffic/Paper Drafts/Paper Draft - Publication Prep/./Sections/RD.tex
-p22
-aV/Users/brianlibgober/Dropbox/Collaborations/Traffic/Paper Drafts/Paper Draft - Publication Prep/Sections/RD_Subsections/Heatmap.tex
-p23
-aV/Users/brianlibgober/Dropbox/Collaborations/Traffic/Paper Drafts/Paper Draft - Publication Prep/./Sections/RD_Subsections/Weather.tex
-p24
-aV/Users/brianlibgober/Dropbox/Collaborations/Traffic/Paper Drafts/Paper Draft - Publication Prep/Sections/RD_Subsections/RDLogic.tex
-p25
+p16
 aS'traffic_draft10.tex'
-p26
+p17
 aV/Users/brianlibgober/Dropbox/Collaborations/Traffic/Paper Drafts/Paper Draft - Publication Prep/./traffic_draft10.tex
-p27
-aV/Users/brianlibgober/Dropbox/Collaborations/Traffic/Paper Drafts/Paper Draft - Publication Prep/Sections/RD_Subsections/Data.tex
-p28
-aV/Users/brianlibgober/Dropbox/Collaborations/Traffic/Paper Drafts/Paper Draft - Publication Prep/./Sections/RD_Subsections/Heatmap.tex
-p29
-aV/Users/brianlibgober/Dropbox/Collaborations/Traffic/Paper Drafts/Paper Draft - Publication Prep/./Sections/RD_Subsections/Race.tex
-p30
-aV/Users/brianlibgober/Dropbox/Collaborations/Traffic/Paper Drafts/Paper Draft - Publication Prep/Sections/RD_Subsections/Race.tex
-p31
-atp32
-Rp33
+p18
+atp19
+Rp20
 sVsynctex
-p34
+p21
 I01
 s.

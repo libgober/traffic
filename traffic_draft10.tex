@@ -1,18 +1,20 @@
 %%document
 \documentclass[11.0pt]{article}
 \usepackage[top=1.0in, bottom=1.0in, left=1.0in, right=1.0in]{geometry}
-
+\usepackage{amssymb}
 %%setup for figure environments and graphics
 \usepackage{graphicx}
-\usepackage{caption}
 \usepackage{epstopdf}
-\usepackage{subcaption}
+\usepackage{multirow}
+%captions 
+\usepackage[textfont=it]{caption}
+\usepackage[textfont=it]{subcaption}
 
 %%Title and Author
 \usepackage{authblk}% for correct display of affiliations 
 \title{ Do Higher Housing Values Make Communities More Conservative? 
 \newline Evidence from the Introduction of E-ZPass
-\thanks{Preliminary. The authors thank Jeffry Frieden and Kenneth Shepsle for insightful comments. The authors names' are listed alphabetically, and the authors contributed equally to all aspects of the analysis. The usual disclaimers apply.}
+\thanks{The authors thank Jeffry Frieden and Kenneth Shepsle for insightful comments. The authors names' are listed alphabetically, and the authors contributed equally to all aspects of the analysis. The usual disclaimers apply.}
 }
 \author[1]{ \sf Connor Jerzak}
 
@@ -35,7 +37,7 @@
 
 \lhead{\sf{  Jerzak \& Libgober  }}
 \chead{}
-\rhead{\sf{Traffic, Property \& Political Attitudes} }
+\rhead{\sf{E-ZPass, Property Values \& Political Preferences} }
 \lfoot{}
 \cfoot{\arabic{page} }
 \rfoot{}
@@ -54,7 +56,7 @@
 %
 %%miscelaneous
 \usepackage{nicefrac}
-
+\usepackage{varioref} %for better cross referencing, using vref to include page numbers if not on same page
 
 \begin{document}
 
@@ -63,9 +65,8 @@
 \input{Sections/Introduction.tex}
 \input{Sections/Literature_Review.tex}
 \input{Sections/RD.tex}
-\input{Sections/Robustness.tex}
 \input{Sections/Conclusion.tex}
-
+\input{Sections/Appendix.tex}
 \nocite{*}
 
 \end{document}

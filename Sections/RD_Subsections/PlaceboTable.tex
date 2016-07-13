@@ -1,0 +1,24 @@
+A second threat to inference comes from time-varying \emph{unobserved} confounders. Although it is impossible to disprove the presence of these confounders, we can nevertheless gain some leverage on the question by considering the placebo case of Ohio. Like Pennsylvania and New Jersey, Ohio has long had tolls along some of its main highways, Ohio did not adopt E-ZPass until 2008. Thus, we can use Ohio as a placebo case to help identify whether toll exits underwent a unique process of political change relative to non-toll exits. We know that there should be no estimated effect of E-ZPass. If we were to identify such an effect, we would have evidence for the idea that time-varying unobserved factors are making precincts near toll exits more conservative than those near non-toll exits. However, using the same matching algorithm, inclusion/exclusion rule, and modeling approach, we find that no such effect is present. We find that precincts near exits that would adopt E-ZPass saw a negative change in their average housing values, and an increase (but insignificant) in Democratic vote share. These factors support the contention that it is the E-ZPass alone (not time-varying unobserved confounders) which is accounting for the decrease in Democratic vote share. In addition, because we find now significant result of the placebo intervention, we also get empirical evidence for the common trends assumption---the idea that the change in average outcome for the control group is representative of what the change would be for the treated group in the absence of an intervention. 
+
+\begin{table}[!htbp] \centering 
+  \caption{\emph{Placebo analysis. Diff-in-diff results for change in average home price and Democratic vote share for Ohio.
+          Matching/control variables include precinct-level covariates on average income, 
+          percent of residents living in the same house as in 1995, percent of residents who are black, 
+          percent of residents who are over the age of 65, percent of residents with a bachelor's degree. All matching/control
+          data are from the US census.} }
+  \label{placebo_voteshare_did} 
+\footnotesize 
+\begin{tabular}{@{\extracolsep{5pt}} ccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+Dependent variable & & DiD Estimate & (Bootstrap S.D.) & (Block Bootstrap S.D.) \\ 
+\hline \\[-1.8ex] 
+\multirow{2}{*}{\emph{Change in Average Home Price}} & Baseline model & \$-997 & (4,557) & (5,379) \\ 
+& With covariate adjustment & \$3,358 & (4,382) & (5,038) \\ 
+
+\multicolumn{5}{c}{\textemdash} \\ 
+\multirow{2}{*}{\emph{Change in Democratic Vote Share}} & Baseline model & 1.39 & (0.53) & (0.68) \\ 
+& With covariate adjustment & 0.74 & (0.87) & (0.8) \\ 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table} 

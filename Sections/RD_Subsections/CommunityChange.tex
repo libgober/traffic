@@ -1,0 +1,27 @@
+
+Any diff-in-diff analysis is also threatened by the presence of time-varying confounders. The effect of the intervention might be correlated with other changes occurring in treated or control communities. Although we have little leverage in directly identifying unobserved confounding, we can establish empirically whether key observed confounders might be changing along with our outcomes of interest. In particular, we can identify such effects by completing the same diff-in-diff procedure for other factors that are important for predicting Democratic vote share. After doing so, we find that no key predictors of democratic vote share underwent changes associated with the introduction of the E-ZPass. 
+
+For example, we might be concerned that E-ZPass precincts have become richer: have higher housing values pushed out poor residents and led to an influx of richer ones? The answer appears to be no. In fact, average incomes seem to have \emph{decreased} in treated E-ZPass precincts relative to the comparable control precincts. The DiD estimate ranges from -$\$613$ to -$\$1,450$, but are statistically insignificant. Next, since E-ZPass precincts are now more desirable, it could be that these communities experienced an influx of new, potentially more conservative residents. However, we find that, on average, E-ZPass communities did not see a population change compared to the control areas. Changes in turnout might be still another confounding variable. If E-ZPass significantly increase or decreased turnout, inferences about the changes in the average Democratic vote share might be suspect. Here too, we find no effect of E-ZPass. Finally, we might wonder whether other characteristics of the E-ZPass communities were affected by the introduction of the electronic tolls. Could it be that E-ZPass communities gentrified racially, or that better educated residents displaced the former residents? No; the percentage of black residents in E-ZPass communities and the percentage of residents with a bachelor's degree did not change. Table \ref{alt_explanations} summarizes these results. 
+
+
+\begin{table}[!htbp] \centering 
+  \caption{\emph{Diff-in-diff results for other key variables.}} 
+  \label{alt_explanations} 
+\footnotesize 
+\begin{tabular}{@{\extracolsep{5pt}} ccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+& \multicolumn{2}{c}{\emph{Baseline model}} & \multicolumn{2}{c}{\emph{With covariate adjustment}} \\
+& \multicolumn{2}{c}{\textemdash} & \multicolumn{2}{c}{\textemdash} \\
+\hline \\[-1.8ex] 
+Dependent variable & DiD Estimate & (Block Bootstrap S.D.) & DiD Estimate & (Block Bootstrap S.D.) \\ 
+\hline \\[-1.8ex] 
+\emph{Average income} & -613.81 & (2488.12) & -1830.39 & (2572.56) \\ 
+\emph{Population} & 30.88 & (30.17) & 15.27 & (32.61) \\ 
+\emph{Turnout} & 0.72 & (0.79) & 0.61 & (0.82) \\ 
+\emph{Percent with bachelors} & 0.64 & (0.37) & 0.56 & (0.43) \\ 
+\emph{Percent black} & 0.47 & (0.35) & 0.59 & (0.33) \\ 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table} 
+

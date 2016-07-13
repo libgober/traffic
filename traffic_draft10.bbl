@@ -602,50 +602,6 @@
       \verb http://www.journals.cambridge.org/abstract%7B%5C_%7DS000305541000047X
       \endverb
     \endentry
-    \entry{Gomez2007}{article}{}
-      \name{author}{3}{}{%
-        {{hash=ef9e7d848d78dd041eeb5cfbfa88d0f2}{%
-           family={Gomez},
-           family_i={G\bibinitperiod},
-           given={Brad\bibnamedelima T.},
-           given_i={B\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-        {{hash=297bb3e8bd3eb62d1e3376ac1ac3e2c2}{%
-           family={Hansford},
-           family_i={H\bibinitperiod},
-           given={Thomas\bibnamedelima G.},
-           given_i={T\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=b5b40dad87f2e93b56e95455971eb9b6}{%
-           family={Krause},
-           family_i={K\bibinitperiod},
-           given={George\bibnamedelima A.},
-           given_i={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \strng{namehash}{a7d2e4748f151603973dd276bde6c3c1}
-      \strng{fullhash}{bfe4a4afd6c5d91442482f2dce2a1431}
-      \field{labelalpha}{GHK07}
-      \field{sortinit}{G}
-      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
-      \field{labelyear}{2007}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The relationship between bad weather and lower levels of voter turnout is widely espoused by media, political practitioners, and, perhaps, even political scientists.Yet, there is virtually no solid empirical evidence linking weather to voter participation. This paper provides an extensive test of the claim.We examine the effect of weather on voter turnout in 14 U.S. presidential elections. Using GIS interpolations, we employ meteorological data drawn from over 22,000 U.S. weather stations to provide election day estimates of rain and snow for each U.S. county.We find that, when compared to normal conditions, rain significantly reduces voter participation by a rate of just less than 1{\%} per inch,while an inch of snowfall decreases turnout by almost .5{\%}. Poor weather is also shown to benefit the Republican party's vote share. Indeed, the weather may have contributed to two Electoral College outcomes, the 1960 and 2000 presidential elections.}
-      \field{isbn}{0022-3816}
-      \field{issn}{00223816}
-      \field{journaltitle}{Journal of Politics}
-      \field{number}{3}
-      \field{title}{{The pepublicans should pray for rain: Weather, turnout, and voting in U.S. presidential elections}}
-      \field{volume}{69}
-      \field{year}{2007}
-      \field{pages}{649\bibrangedash 663}
-      \range{pages}{15}
-      \verb{doi}
-      \verb 10.1111/j.1468-2508.2007.00565.x
-      \endverb
-      \verb{file}
-      \verb :Users/brianlibgober/Documents/Mendeley Desktop/Journal of Politics/Gomez, Hansford, Krause/2007/Gomez, Hansford, Krause - 2007 - The pepublicans should pray for rain Weather, turnout, and voting in U.S. presidential elections - Jour.pdf:pdf
-      \endverb
-    \endentry
     \entry{Hibbs1987}{book}{}
       \name{author}{1}{}{%
         {{hash=29b0869a78e349228f8475f931a2f969}{%

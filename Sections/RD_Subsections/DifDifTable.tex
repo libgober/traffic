@@ -1,0 +1,30 @@
+
+Having established that our treated and control precincts are comparable on observables, we can begin our analysis of the diff-in-diff. First, it is clear that average home price in E-ZPass precincts did increase, as expected. In our baseline model, we calculated the unconditional diff-in-diff for the matched treated and control communities. We also present the results from a covariate adjusted model. In this adjusted model, we add matching variables as predictor covariates and we calculate the diff-in-diff estimates using linear regression to increase precision. We find that, according to the baseline model, treated precincts saw an increase in average home price about $\$82,000$ greater than that of the control baseline, well above statistical significance as calculated using both traditional bootstrap and block bootstrap standard errors.\footnote{See \textcite{Bertrand2004} for why bootstrapping is preferred to traditional standard errors for diff-in-diff estimates.}  The estimated effect of E-ZPass is lower with the covariate adjusted model, but still highly significant. 
+
+Having seen that E-ZPass precincts received, on average, a big boost in home price, we consider the effect of E-ZPass on change in Democratic support in these communities. We present four measures of Democratic support. First, we find that the Democratic presidential vote share between $2000$ and $2004$ shows a $2$ percentage point drop in treated precincts relative to control. This effect is significant in both the baseline and unadjusted model. If we expand our time horizon and look at the change in Democratic Presidential vote share between $2000$ and $2008$, we find that this estimated effect increases in magnitude to -$3$ percentage points. Next, we can examine changes in the share of campaign contributions from these precincts going to Democrats. With this proxy for Democratic support, we find a $8$ percentage point drop for the Democratic cash share in treated communities relative to control precincts. Finally, using individual contribution data, we identify individuals living in our treated and control precincts who contributed both in 2000 and 2004. If we restrict our analysis to this group only, we find an average drop in Democratic presidential support of $20$ percentage points. This final analysis allows us to control for factors specific to each campaign contributor. Here, we are able to identify a sizable percentage point decline in the likelihood of individual voters contributing to the Democratic Party, allaying concerns that our findings reflect only demographic sorting, and not genuine changes in voting behavior. Table \ref{voteshare_did} summarizes these results. 
+
+\begin{table}[!htbp] \centering 
+  \caption{Main difference-in-difference results, comparing treated to control and each outcome variable to its analogue from 2000. Matching/control variables are same as in Table \ref{balance_table}.}
+  \label{voteshare_did} 
+\resizebox{\textwidth}{!}{ \begin{tabular}{@{\extracolsep{5pt}} ccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+Dependent Variable & & DiD Estimate & (Bootstrap S.D.) & (Block Bootstrap S.D.) \\ 
+\hline \\[-1.8ex] 
+\multirow{2}{*}{\emph{Average Home Price}} & Baseline model & \$81,752 & (4,949) & (19,926) \\ 
+& With covariate adjustment & \$79,054 & (4,722) & (17,866) \\ 
+\multicolumn{5}{c}{\textemdash} \\ 
+\multirow{2}{*}{\emph{Dem. Vote Share, 2004}} & Baseline model & -2.37 & (0.2) & (0.97) \\ 
+& With covariate adjustment & -2.46 & (0.24) & (0.98) \\ 
+\multicolumn{5}{c}{\textemdash} \\ 
+\multirow{2}{*}{\emph{Dem. Vote Share, 2008}} & Baseline model & -3.1 & (0.33) & (1.18) \\ 
+& With covariate adjustment & -2.6 & (0.35) & (1.14) \\ 
+\multicolumn{5}{c}{\textemdash} \\ 
+\multirow{2}{*}{\emph{Dem. Cash Share, 2004}} & Baseline model & -7.53 & (1.61) & (5.97) \\ 
+& With covariate adjustment & -7.72 & (1.59) & (6.44) \\ 
+\multicolumn{5}{c}{\textemdash} \\ 
+\multirow{2}{*}{\emph{Dem. Support by Stationary Contributors, 2004}} & Baseline model & -20.04 & (10.25) & (9.68) \\ 
+& With covariate adjustment & -18.19 & (11.16) & (8.43) \\ 
+\hline \\[-1.8ex] 
+\end{tabular} }
+\end{table} 
