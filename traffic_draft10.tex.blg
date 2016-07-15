@@ -1,5 +1,0 @@
-[0] Config.pm:343> INFO - This is Biber 2.5
-[1] Config.pm:346> INFO - Logfile is 'traffic_draft10.tex.blg'
-[63] biber-darwin:290> INFO - === Wed Jun 22, 2016, 16:02:18
-[208] Utils.pm:165> ERROR - Cannot find control file 'traffic_draft10.tex.bcf'! - did you pass the "backend=biber" option to BibLaTeX?
-[208] Biber.pm:112> INFO - ERRORS: 1

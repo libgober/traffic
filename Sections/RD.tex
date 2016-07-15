@@ -1,7 +1,21 @@
 \section{Research Design}
-
 \input{Sections/RD_Subsections/SectionIntro.tex}
-
 \input{Sections/RD_Subsections/Data.tex}
-
 \input{Sections/RD_Subsections/RDLogic.tex}
+
+\section{Results}
+\input{Sections/RD_Subsections/BalanceTable.tex}
+\input{Sections/RD_Subsections/DifDifTable.tex}
+\input{Sections/RD_Subsections/IVTable.tex}
+
+The IV and conditional difference-in-difference methods presented so far find a consistent effect over a variety of dependent variables, statistically significant and of similar magnitude. To ensure that these findings are not spurious, we conduct several validity checks. 
+
+\subsection{Validity Checks}
+We provide four validity checks for our results. We first show that the previously presented results are not sensitive to the exclusion and inclusion rules. Next, we establish that other important community-level variables are not significantly affected by the introduction of E-ZPass. This fact bolsters our argument that decrease in Democratic vote share is not explained by migration or other community-level changes besides the increase in property values. A placebo test gives evidence that unobserved confounders are not problematic. Finally, we conclude by demonstrating that weather is not a time-varying confounder.
+
+Figure \vref{fig:heatmap} shows that our main diff-in-diff results are not sensitive to the inclusion or exclusion parameters. On this graph, the $X$-$Y$ position gives the conditional diff-in-diff for a given combination of inclusion and exclusion rule. For example, at (12,18), one sees the estimated effect when treated precincts are defined as those within 12 miles of an E-ZPass plaza but more than 18 miles from a non-EZ-Pass highway. Effect size is indicated by the darkness of the shape, the number of matched units is indicated by the area of the point, and results that are significant at the conventional 95\% threshhold are indicated by diamonds. Generally, effect magnitudes and significance are not sensitive to choice of rule, and changes in effect magnitude are gradual. 
+
+ \input{Sections/RD_Subsections/Heatmap.tex}
+\input{Sections/RD_Subsections/CommunityChange.tex}
+\input{Sections/RD_Subsections/PlaceboTable.tex}
+\input{Sections/RD_Subsections/Weather.tex}

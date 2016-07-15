@@ -9,24 +9,25 @@
 %captions 
 \usepackage[textfont=it]{caption}
 \usepackage[textfont=it]{subcaption}
+\usepackage[sf]{titlesec}
 
 %%Title and Author
 \usepackage{authblk}% for correct display of affiliations 
-\title{ Do Higher Housing Values Make Communities More Conservative? 
-\newline Evidence from the Introduction of E-ZPass
+\title{ \sf{Property Values \& Political Preferences:\\ Evidence from the Adoption of E-ZPass}
 \thanks{The authors thank Jeffry Frieden and Kenneth Shepsle for insightful comments. The authors names' are listed alphabetically, and the authors contributed equally to all aspects of the analysis. The usual disclaimers apply.}
 }
 \author[1]{ \sf Connor Jerzak}
 
 \author[2]{ \sf Brian Libgober}
 
-\affil[1]{ \sf Department of Government and Institute for Quantitative Social Science, 
+\affil[1]{ \sf Department of Government and Institute for Quantitative Social Science
 \authorcr \sf Harvard University, 1737 Cambridge Street, Cambridge MA 02138
-\authorcr  \sf e-mail: cjerzak@g.harvard.edu} 
+\authorcr  \sf e-mail: cjerzak@g.harvard.edu \vspace{0.6cm}} 
 
-\affil[2]{ \sf Department of Government and Institute for Quantitative Social Science, 
+\affil[2]{ \sf Department of Government and Institute for Quantitative Social Science
 \authorcr \sf Harvard University, 1737 Cambridge Street, Cambridge MA 02138
 \authorcr \sf e-mail: blibgober@g.harvard.edu}
+\date{}
 \renewcommand\footnotemark{} %kills the * next to title in thanks
 \renewcommand\footnoterule{}  %kills the * next to title in thanks
 
@@ -37,7 +38,7 @@
 
 \lhead{\sf{  Jerzak \& Libgober  }}
 \chead{}
-\rhead{\sf{E-ZPass, Property Values \& Political Preferences} }
+\rhead{\sf{Property Values \& Political Preferences} }
 \lfoot{}
 \cfoot{\arabic{page} }
 \rfoot{}
@@ -57,6 +58,7 @@
 %%miscelaneous
 \usepackage{nicefrac}
 \usepackage{varioref} %for better cross referencing, using vref to include page numbers if not on same page
+\newcommand{\pderiv}[2]{\frac{\partial #1}{\partial #2}} %simple partial derivatives
 
 \begin{document}
 
@@ -65,8 +67,14 @@
 \input{Sections/Introduction.tex}
 \input{Sections/Literature_Review.tex}
 \input{Sections/RD.tex}
+\input{Sections/Discussion.tex}
 \input{Sections/Conclusion.tex}
 \input{Sections/Appendix.tex}
 \nocite{*}
 
 \end{document}
+
+
+
+%OVERALL: fixed voteshare or vote share 
+%make consistent IV threshold and big graph 

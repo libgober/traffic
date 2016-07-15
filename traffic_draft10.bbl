@@ -280,6 +280,56 @@
       \verb :Users/brianlibgober/Documents/Mendeley Desktop/Quarterly Journal of Economics/Baum-Snow/2007/Baum-Snow - 2007 - Did highways cause suburbanization - Quarterly Journal of Economics.pdf:pdf
       \endverb
     \endentry
+    \entry{Bertrand2004}{article}{}
+      \name{author}{3}{}{%
+        {{hash=aed835f45da21dbf11579197df8a1e03}{%
+           family={Bertrand},
+           family_i={B\bibinitperiod},
+           given={M.},
+           given_i={M\bibinitperiod}}}%
+        {{hash=4fb9d9b146815bacac72fd89d35d7201}{%
+           family={Duflo},
+           family_i={D\bibinitperiod},
+           given={E.},
+           given_i={E\bibinitperiod}}}%
+        {{hash=8f641f01c1d264f4477b23c72c80b0f3}{%
+           family={Mullainathan},
+           family_i={M\bibinitperiod},
+           given={S.},
+           given_i={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{0b1218a77be4bf9e2e16ef85a09f9934}
+      \strng{fullhash}{ea40ef1e7672e78980141d5963efd635}
+      \field{labelalpha}{BDM04}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2004}
+      \field{labelmonth}{02}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0033-5533}
+      \field{journaltitle}{The Quarterly Journal of Economics}
+      \field{month}{02}
+      \field{number}{1}
+      \field{title}{{How Much Should We Trust Differences-In-Differences Estimates?}}
+      \field{volume}{119}
+      \field{year}{2004}
+      \field{pages}{249\bibrangedash 275}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1162/003355304772839588
+      \endverb
+      \verb{file}
+      \verb :Users/brianlibgober/Documents/Mendeley Desktop/The Quarterly Journal of Economics/Bertrand, Duflo, Mullainathan/2004/Bertrand, Duflo, Mullainathan - 2004 - How Much Should We Trust Differences-In-Differences Estimates - The Quarterly Journal of Economic.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://qje.oxfordjournals.org/cgi/doi/10.1162/003355304772839588
+      \endverb
+    \endentry
     \entry{Berelson1954}{book}{}
       \name{author}{3}{}{%
         {{hash=1e65689366616b5b7acb04a56b3dc6a7}{%
@@ -315,6 +365,77 @@
       \field{labeltitlesource}{title}
       \field{title}{{Voting: A Study of Opinion Formation in a Presidential Campaign}}
       \field{year}{1954}
+    \endentry
+    \entry{Bonica2013}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=da6af7365cdb3b443f8352985930182c}{%
+           family={Bonica},
+           family_i={B\bibinitperiod},
+           given={Adam},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Stanford, CA}%
+      }
+      \list{publisher}{1}{%
+        {Stanford University Libraries}%
+      }
+      \strng{namehash}{da6af7365cdb3b443f8352985930182c}
+      \strng{fullhash}{da6af7365cdb3b443f8352985930182c}
+      \field{labelalpha}{Bon13}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2013}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Database on Ideology, Money in Politics, and Elections}}
+      \field{year}{2013}
+    \endentry
+    \entry{Banks2012}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4587572103ca6e4e4ac2fd581c3bbb08}{%
+           family={Banks},
+           family_i={B\bibinitperiod},
+           given={Antoine\bibnamedelima J.},
+           given_i={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=69555872a386cb8f50f5492c5270a2f3}{%
+           family={Valentino},
+           family_i={V\bibinitperiod},
+           given={Nicholas\bibnamedelima A.},
+           given_i={N\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Blackwell Publishing Inc}%
+      }
+      \strng{namehash}{77d77503ffedfbb493d0e9542cb1e06c}
+      \strng{fullhash}{77d77503ffedfbb493d0e9542cb1e06c}
+      \field{labelalpha}{BV12}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2012}
+      \field{labelmonth}{04}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00925853}
+      \field{journaltitle}{American Journal of Political Science}
+      \field{month}{04}
+      \field{number}{2}
+      \field{title}{{Emotional Substrates of White Racial Attitudes}}
+      \field{volume}{56}
+      \field{year}{2012}
+      \field{pages}{286\bibrangedash 297}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1111/j.1540-5907.2011.00561.x
+      \endverb
+      \verb{file}
+      \verb ::
+      \endverb
+      \verb{url}
+      \verb http://doi.wiley.com/10.1111/j.1540-5907.2011.00561.x
+      \endverb
     \endentry
     \entry{Campbell1960}{book}{}
       \name{author}{4}{}{%
@@ -429,6 +550,46 @@
       \endverb
       \verb{url}
       \verb http://pubs.aeaweb.org/doi/abs/10.1257/app.3.1.65
+      \endverb
+    \endentry
+    \entry{Enos2014}{article}{}
+      \name{author}{1}{}{%
+        {{hash=aec9a840f1308e8c0fdd446aee7e222a}{%
+           family={Enos},
+           family_i={E\bibinitperiod},
+           given={R.\bibnamedelimi D.},
+           given_i={R\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {National Academy of Sciences}%
+      }
+      \strng{namehash}{aec9a840f1308e8c0fdd446aee7e222a}
+      \strng{fullhash}{aec9a840f1308e8c0fdd446aee7e222a}
+      \field{labelalpha}{Eno14}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{labelyear}{2014}
+      \field{labelmonth}{03}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0027-8424}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{month}{03}
+      \field{number}{10}
+      \field{title}{{Causal effect of intergroup contact on exclusionary attitudes}}
+      \field{volume}{111}
+      \field{year}{2014}
+      \field{pages}{3699\bibrangedash 3704}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1073/pnas.1317670111
+      \endverb
+      \verb{file}
+      \verb ::
+      \endverb
+      \verb{url}
+      \verb http://www.pnas.org/cgi/doi/10.1073/pnas.1317670111
       \endverb
     \endentry
     \entry{Fujita1999}{book}{}
@@ -602,6 +763,50 @@
       \verb http://www.journals.cambridge.org/abstract%7B%5C_%7DS000305541000047X
       \endverb
     \endentry
+    \entry{Gomez2007}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ef9e7d848d78dd041eeb5cfbfa88d0f2}{%
+           family={Gomez},
+           family_i={G\bibinitperiod},
+           given={Brad\bibnamedelima T.},
+           given_i={B\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=297bb3e8bd3eb62d1e3376ac1ac3e2c2}{%
+           family={Hansford},
+           family_i={H\bibinitperiod},
+           given={Thomas\bibnamedelima G.},
+           given_i={T\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=b5b40dad87f2e93b56e95455971eb9b6}{%
+           family={Krause},
+           family_i={K\bibinitperiod},
+           given={George\bibnamedelima A.},
+           given_i={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{a7d2e4748f151603973dd276bde6c3c1}
+      \strng{fullhash}{bfe4a4afd6c5d91442482f2dce2a1431}
+      \field{labelalpha}{GHK07}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The relationship between bad weather and lower levels of voter turnout is widely espoused by media, political practitioners, and, perhaps, even political scientists.Yet, there is virtually no solid empirical evidence linking weather to voter participation. This paper provides an extensive test of the claim.We examine the effect of weather on voter turnout in 14 U.S. presidential elections. Using GIS interpolations, we employ meteorological data drawn from over 22,000 U.S. weather stations to provide election day estimates of rain and snow for each U.S. county.We find that, when compared to normal conditions, rain significantly reduces voter participation by a rate of just less than 1{\%} per inch,while an inch of snowfall decreases turnout by almost .5{\%}. Poor weather is also shown to benefit the Republican party's vote share. Indeed, the weather may have contributed to two Electoral College outcomes, the 1960 and 2000 presidential elections.}
+      \field{isbn}{0022-3816}
+      \field{issn}{00223816}
+      \field{journaltitle}{Journal of Politics}
+      \field{number}{3}
+      \field{title}{{The pepublicans should pray for rain: Weather, turnout, and voting in U.S. presidential elections}}
+      \field{volume}{69}
+      \field{year}{2007}
+      \field{pages}{649\bibrangedash 663}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1111/j.1468-2508.2007.00565.x
+      \endverb
+      \verb{file}
+      \verb :Users/brianlibgober/Documents/Mendeley Desktop/Journal of Politics/Gomez, Hansford, Krause/2007/Gomez, Hansford, Krause - 2007 - The pepublicans should pray for rain Weather, turnout, and voting in U.S. presidential elections - Jour.pdf:pdf
+      \endverb
+    \endentry
     \entry{Hibbs1987}{book}{}
       \name{author}{1}{}{%
         {{hash=29b0869a78e349228f8475f931a2f969}{%
@@ -702,6 +907,63 @@
       \endverb
       \verb{url}
       \verb http://onlinelibrary.wiley.com/doi/10.1111/ajps.12179/pdf
+      \endverb
+    \endentry
+    \entry{Ho2007}{article}{}
+      \name{author}{4}{}{%
+        {{hash=125434d443e3d90ecbffa5568b236f07}{%
+           family={Ho},
+           family_i={H\bibinitperiod},
+           given={Daniel\bibnamedelima E.},
+           given_i={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=3fb69a8c942c769b74775b484c82bbe9}{%
+           family={Imai},
+           family_i={I\bibinitperiod},
+           given={Kosuke},
+           given_i={K\bibinitperiod}}}%
+        {{hash=e62a3c431989b28a48ea18aa5cfcfbed}{%
+           family={King},
+           family_i={K\bibinitperiod},
+           given={Gary},
+           given_i={G\bibinitperiod}}}%
+        {{hash=1d0aef5657071d2c16d32c8c877b57f9}{%
+           family={Stuart},
+           family_i={S\bibinitperiod},
+           given={Elizabeth\bibnamedelima A.},
+           given_i={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{f05a54755d5c9df7e2b295ad1ff2efaa}
+      \strng{fullhash}{d81469ff00019cd6ba24b5e6eff96f94}
+      \field{labelalpha}{Ho+07}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{2007}
+      \field{labelmonth}{12}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Although published works rarely include causal estimates from more$\backslash$nthan a few model specifications, authors usually choose the presented$\backslash$nestimates from numerous trial runs readers never see. Given the often$\backslash$nlarge variation in estimates across choices of control variables,$\backslash$nfunctional forms, and other modeling assumptions, how can researchers$\backslash$nensure that the few estimates presented are accurate or representative?$\backslash$nHow do readers know that publications are not merely demonstrations$\backslash$nthat it is possible to find a specification that fits the author's$\backslash$nfavorite hypothesis? And how do we evaluate or even define statistical$\backslash$nproperties like unbiasedness or mean squared error when no unique$\backslash$nmodel or estimator even exists? Matching methods, which offer the$\backslash$npromise of causal inference with fewer assumptions, constitute one$\backslash$npossible way forward, but crucial results in this fast-growing methodological$\backslash$nliterature are often grossly misinterpreted. We explain how to avoid$\backslash$nthese misinterpretations and propose a unified approach that makes$\backslash$nit possible for researchers to preprocess data with matching (such$\backslash$nas with the easy-to-use software we offer) and then to apply the$\backslash$nbest parametric techniques they would have used anyway. This procedure$\backslash$nmakes parametric models produce more accurate and considerably less$\backslash$nmodel-dependent causal inferences.}
+      \field{isbn}{1047198714764989}
+      \field{issn}{10471987}
+      \field{journaltitle}{Political Analysis}
+      \field{month}{12}
+      \field{number}{3}
+      \field{title}{{Matching as nonparametric preprocessing for reducing model dependence in parametric causal inference}}
+      \field{volume}{15}
+      \field{year}{2007}
+      \field{pages}{199\bibrangedash 236}
+      \range{pages}{38}
+      \verb{doi}
+      \verb 10.1093/pan/mpl013
+      \endverb
+      \verb{file}
+      \verb :Users/brianlibgober/Documents/Mendeley Desktop/Political Analysis/Ho et al/2007/Ho et al. - 2007 - Matching as nonparametric preprocessing for reducing model dependence in parametric causal inference - Political Anal.pdf:pdf
+      \endverb
+      \verb{url}
+      \verb http://pan.oxfordjournals.org/cgi/doi/10.1093/pan/mpl013
       \endverb
     \endentry
     \entry{Lazarsfeld1948}{book}{}
@@ -823,6 +1085,98 @@
       \field{pages}{375\bibrangedash 396}
       \range{pages}{22}
     \endentry
+    \entry{Levkovich2016}{article}{}
+      \name{author}{3}{}{%
+        {{hash=cd56dea04df6eb054dcdb7cb04b99bc6}{%
+           family={Levkovich},
+           family_i={L\bibinitperiod},
+           given={Or},
+           given_i={O\bibinitperiod}}}%
+        {{hash=069791abfe50c6b87c4a5c8d419e4460}{%
+           family={Rouwendal},
+           family_i={R\bibinitperiod},
+           given={Jan},
+           given_i={J\bibinitperiod}}}%
+        {{hash=89c5e3c667b1e49bbcd3b830c89b1549}{%
+           prefix={van},
+           prefix_i={v\bibinitperiod},
+           family={Marwijk},
+           family_i={M\bibinitperiod},
+           given={Ramona},
+           given_i={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer US}%
+      }
+      \strng{namehash}{44ee5930dd8598bfb1bdd2e6301453e5}
+      \strng{fullhash}{7207c25da6a5ece33f05078c6ee78ad2}
+      \field{labelalpha}{LRM16}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2016}
+      \field{labelmonth}{03}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0049-4488}
+      \field{journaltitle}{Transportation}
+      \field{month}{03}
+      \field{number}{2}
+      \field{title}{{The effects of highway development on housing prices}}
+      \field{volume}{43}
+      \field{year}{2016}
+      \field{pages}{379\bibrangedash 405}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1007/s11116-015-9580-7
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s11116-015-9580-7
+      \endverb
+    \endentry
+    \entry{Morgan2012}{article}{}
+      \name{author}{2}{}{%
+        {{hash=536fd568dfb0a39d3f524d8732b302f9}{%
+           family={Morgan},
+           family_i={M\bibinitperiod},
+           given={Kari\bibnamedelima Lock},
+           given_i={K\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=37fe180f849ae0085cba2b45692be375}{%
+           family={Rubin},
+           family_i={R\bibinitperiod},
+           given={Donald\bibnamedelima B.},
+           given_i={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Institute of Mathematical Statistics}%
+      }
+      \strng{namehash}{441958c9b15ec2149b35ace838535f94}
+      \strng{fullhash}{441958c9b15ec2149b35ace838535f94}
+      \field{labelalpha}{MR12}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{2012}
+      \field{labelmonth}{04}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0090-5364}
+      \field{journaltitle}{The Annals of Statistics}
+      \field{month}{04}
+      \field{number}{2}
+      \field{title}{{Rerandomization to improve covariate balance in experiments}}
+      \field{volume}{40}
+      \field{year}{2012}
+      \field{pages}{1263\bibrangedash 1282}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1214/12-AOS1008
+      \endverb
+      \verb{url}
+      \verb http://projecteuclid.org/euclid.aos/1342625468
+      \endverb
+      \keyw{Hotelling's {\$}T{\^{}}{\{}2{\}}{\$},Mahalanobis distance,Randomization,causal effect,clinical trial,experimental design,treatment allocation}
+    \endentry
     \entry{Meltzer1981}{article}{}
       \name{author}{2}{}{%
         {{hash=4bb48777f58a4765a67bd1c67473df90}{%
@@ -931,6 +1285,37 @@
       \field{isbn}{978-0-674-10815-8 978-0-674-10816-5}
       \field{title}{{The changing American voter}}
       \field{year}{1979}
+    \endentry
+    \entry{Persson2000}{book}{}
+      \name{author}{2}{}{%
+        {{hash=f1fa15cf0ff6f6015cc43a7429eab414}{%
+           family={Persson},
+           family_i={P\bibinitperiod},
+           given={Torsten},
+           given_i={T\bibinitperiod}}}%
+        {{hash=3f0998c9b15cad41e2edd7a52a03f721}{%
+           family={Tabellini},
+           family_i={T\bibinitperiod},
+           given={Guido\bibnamedelima Enrico},
+           given_i={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, Mass.}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{0ef656717acb416440a9b14e5cfb105b}
+      \strng{fullhash}{0ef656717acb416440a9b14e5cfb105b}
+      \field{labelalpha}{PT00}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2000}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Political Economics: Explaining Economic Policy}}
+      \field{year}{2000}
     \endentry
     \entry{Roberts1977}{article}{}
       \name{author}{1}{}{%

@@ -1,19 +1,18 @@
 
-The diff-in-diff analysis just presented takes one approach to conceptualizing EZ-Pass as a natural experiment, but we can also take a different approach using instrumental variables. In the IV approach, we will look at communities within $20$ miles of E-ZPass toll plazas, and use proximity to E-ZPass as an instrument for change in average home price. Figure \ref{iv_graph} gives justification for this approach. On the left panel, we see the tight relationship between distance from E-ZPass and average change in home price. We find that precincts closest to E-ZPass plazas show the highest change in home price. On the right panel, we see the tight relationship between distance from E-ZPass and average change in Democratic vote share. We find that precincts closest to E-ZPass plazas show the most negative change in Democratic support. The symmetry is striking. 
+The diff-in-diff analysis just presented takes one approach to conceptualizing E-ZPass as a natural experiment, but we can also take a different approach using instrumental variables. In the IV approach, we look at communities within $30$ miles of E-ZPass toll plazas, and use proximity to E-ZPass as an instrument for change in average home price. Figure \ref{iv_graph} gives justification for this approach. On the left panel, we see the tight relationship between distance from E-ZPass and average change in home price. We find that precincts closest to E-ZPass plazas show the highest change in home price. On the right panel, we see the tight relationship between distance from E-ZPass and average change in Democratic vote share. We find that precincts closest to E-ZPass plazas show the most negative change in Democratic support. The symmetry is striking. 
 
-Now, if we assume that proximity to E-ZPass is uncorrelated with other factors affecting change in Democratic vote share, we can then proceed straightforwardly with a two-stage least squares analysis. The first stage model uses each precinct's proximity to the nearest E-ZPass plaza as a predictor of change in average home price between 2000 and 2004 after controlling for other background variables. The second stage model uses the predicted change in home price to explain changes in Democratic support, again after controlling for the background variables. 
+Now, if the exclusion restriction holds, we can proceed with a two-stage least squares analysis. The first stage model uses each precinct's proximity to the nearest E-ZPass plaza as a predictor of change in average home price between 2000 and 2004 after controlling for other background variables. The second stage model uses the predicted change in home price to explain changes in Democratic support, again after controlling for the background variables. 
 
 \begin{figure}[htb!]%
-    \centering
- \includegraphics[scale=0.50]{Sections/RD_Subsections/IV_graphs.pdf}%
+    \centering \includegraphics[width=0.75\textwidth,keepaspectratio]{Sections/RD_Subsections/IV_graphs.pdf}%
    \caption{Distance to E-ZPass and change in average home price and Democratic vote share.}
    \label{iv_graph}
 \end{figure}
 
-Table \ref{iv_analysis} presents these IV results. The first stage effect is strong, with a point estimate of $5.37$ and a robust standard error of $1.58$. Substantively, this first stage result indicates that, if we consider precincts within $10$ miles of the E-ZPass exits, those precincts which were closer to the E-ZPass nexus saw a greater increase in average home price compared to precincts farther away. The second stage leads to conclusions consistent with the diff-in-diff analysis. Using the same four outcome variables as used before, we find a negative estimated effect of the E-ZPass shock on Democratic support. The largest estimated effect is found for the Democratic support from stationary contributors. According to the IV model, if a stationary contributor received a \$50,000 home price increase, we would expect to see their support for Republican presidential candidates increase by about $4.5$ percentage points. The median home price in the US is now about \$300,000. Hence, if a precinct were populated only by average homes, and if home prices received an exogenous shock of $16\%$ and increased to \$350,000, we would expect stationary contributors from that precinct to go, for example, from $52\%$ supporting Democrats in 2000 to $52\%$ supporting Republicans in 2004. 
+Table \ref{iv_analysis} presents these IV results. The first stage effect is strong, with a point estimate of $3.76$ and a robust standard error of $0.26$. Substantively, this first stage indicates that, if we consider areas within $30$ miles of the E-ZPass exits, those precincts which were closer to the E-ZPass nexus saw a greater home price increase than precincts farther away. The second stage leads to conclusions consistent with the diff-in-diff analysis. Using the same four outcome variables as used before, we find a negative estimated effect of the E-ZPass shock on Democratic support. The largest estimated effect is found for the Democratic support from stationary contributors. According to the IV model, if a stationary contributor received a \$50,000 home price increase, we would expect to see their support for Republican presidential candidates increase by about $5$ percentage points. The median home price in the US is now about \$300,000. Hence, if a precinct were populated only by average homes, and if home prices received an exogenous shock of $16\%$ and increased to \$350,000, we would expect stationary contributors from that precinct to flip from $52.5\%$ supporting Democrats in 2000 to $52.5\%$ supporting Republicans in 2004. 
 
-\begin{table}[!htbp] \centering 
-  \caption{IV analysis. Estimates for demographic control variables are omitted.} 
+\begin{table}[!bp] \centering 
+  \caption{IV analysis. Estimates for demographic control variables are omitted. Control variables include the matching variables previously discussed. Robust standard errors are adjusted for the IV estimation.} 
   \label{iv_analysis} 
 \footnotesize \begin{tabular}{@{\extracolsep{5pt}} cccc} 
 \\[-1.8ex]\hline 
@@ -22,20 +21,20 @@ Table \ref{iv_analysis} presents these IV results. The first stage effect is str
 \hline \\[-1.8ex] 
 Causal variable & Instrument & Estimate & (Robust S.D.) \\ 
 \hline \\[-1.8ex] 
-\emph{Change in Home Price from 2000} & \emph{Proximity to E-ZPass Plaza} & 4.93 & 0.33 \\ 
+\emph{Change in Home Price from 2000} & \emph{Proximity to E-ZPass Plaza} & 3.76 & 0.26 \\ 
 
 \rule{0pt}{3ex}  & & & \\ 
 \multicolumn{4}{c}{\textbf{Second Stage for Predicting  Change in Dem. Support}} \\ 
 \hline \\[-1.8ex] 
 Dependent Variable & Causal variable & IV Estimate & (Robust S.D.) \\ 
 \hline \\[-1.8ex] 
-\emph{Change in Dem. vote share, 2004} & \emph{Change in average home price} &  -0.24 &  (0.09) \\ 
+\emph{Change in Dem. vote share, 2004} & \emph{Change in average home price}  & -0.28 & 0.09 \\ 
 
-\emph{Change in Dem. vote share, 2008} & \emph{ `` ''  } &-1.55 & (0.23) \\ 
+\emph{Change in Dem. vote share, 2008} & \emph{ `` ''  }  & -1.29 & 0.19 \\ 
 
-\emph{Change in Dem. cash share, 2004}  & \emph{ `` ''  } & -8.58 & (1.22) \\
+\emph{Change in Dem. cash share, 2004}  & \emph{ `` ''  }  & -7.83 & 1.07 \\ 
 
-\emph{Change in Dem. stationary support, 2004} & \emph{  `` '' } & -11.13 & (3.35) \\ 
+\emph{Change in Dem. stationary support, 2004} & \emph{  `` '' } & -11.50 & (3.28) \\ 
 \hline \\[-1.8ex] 
 \end{tabular} 
 \end{table} 
